@@ -1,20 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+
 	<title>OpenHCI 2016 | 超覺未來</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta charset="utf-8" />
+
+	<!-- bootstrap and jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+	<script type="text/javascript">
+  		$(document).ready(function(){
+    		$('.carousel').carousel({
+      		interval: false
+    		})
+  		});    
+	</script>
+	
+
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+<style>
+body {background-color:lightgrey;}
+</style>
+
 </head>
-<body>
-	<div class="menu"></div>
-	<div class="section"></div>
-	<div class="section"></div>
-	<div class="section"></div>
-	<div class="section"></div>
-	<div class="section"></div>
-	<div class="section"></div>
-	<div class="section"></div>
+<body bgcolor="blue">
+
+	<!-- fixed menu bar -->
+	<!-- navbar.css need to be changed to make the menu center-aligned, I think -->	
+	
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-targert="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only"> Toggle Navigation </span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"> OpenHCI 2016 </a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#openhci2016">OpenHCI 2016</a></li>
+					<li><a href="#introngoal">Intro &amp Goals</a></li>
+					<li><a href="#program">Program</a></li>
+					<li><a href="#registration">Registration</a></li>
+					<li><a href="#crew">Crew</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--
+		Home
+	-->
+	<section id="home">
+		<br><br><br>
+		<center><h1>home</h1></center>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12"><center>logo</center></div>
+				<div class="col-lg-12"><center>some text</center></div>
+				<div class="col-lg-12"><center>date</center></div>
+				<div class="col-lg-12"><center>more text</center></div>
+			</div>
+		</div>
+	</section>
+	<HR>
+
+	<!--
+		OpenHCI 2016
+	-->	
+	<section id="openhci2016">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<h2><center>openhci2016</center></h2>
+				</div>
+				<div class="col-lg-8">
+					<center>here should be a lot of text</center>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		Intro & Goals
+	-->
+	<HR>
+	<section id="introngoals">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<h2><center>intro &amp goals</center></h2>
+				</div>
+				<div class="col-lg-8">
+					<center>here should be a lot of text too</center>
+				</div>
+			</div>
+		</div>
+	</section>
+	<HR>
+
+	<!--
+		Schedule part. I believe the carousel indicators can be modified to be the day list
+	-->
+	<section id="program">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<h2><center>schedule</center></h2>
+					<br>
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<center>here is the day list for href</center>
+				</div>
+				<div class="col-lg-8">
+					<div id="dayScehdule" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#dayScehdule" data-slide-to="0" class="active"></li>
+							<li data-target="#dayScehdule" data-slide-to="1"></li>
+							<li data-target="#dayScehdule" data-slide-to="2"></li>
+							<li data-target="#dayScehdule" data-slide-to="3"></li>
+							<li data-target="#dayScehdule" data-slide-to="4"></li>
+							<li data-target="#dayScehdule" data-slide-to="5"></li>
+						</ol>
+						<div class="carousel-inner" role="list-box">
+							<div class="item active">
+								<center>this should be day 1</center>
+							</div>
+							<div class="item">
+								<center>day 2 is here</center>
+							</div>
+							<div class="item">
+								<center>day 3 is here</center>
+							</div>
+							<div class="item">
+								<center>day 4 is here</center>
+							</div>
+							<div class="item">
+								<center>day 5 is here</center>
+							</div>
+							<div class="item">
+								<center>last day is here</center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<HR>
+
+	<!--
+		Registration
+	-->
+	<section id="registration">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<center><h2>registration</h2></center><br>
+					<center>button here</center>
+				</div>
+				<div class="col-lg-8">
+					<center>here should be a lot of text</center>
+				</div>
+			</div>
+		</div>
+	</section>
+	<HR>
+
+	<!--
+		Crew
+	-->
+	<br>
+	<section id="crew">
+		<div class="container fluid">
+			<div id="crewList" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#crewList" data-slide-to="0" class="active"></li>
+					<li data-target="#crewList" data-slide-to="1"></li>
+					<li data-target="#crewList" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="list-box">
+					<div class="item active">
+						<center>some people</center>
+					</div>
+					<div class="item">
+						<center>some other people</center>
+					</div>
+					<div class="item">
+						<center>the last people</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<HR>
+	<section id="contact">
+		<h2><center>contact</center></h2>
+	</section>
+
+
 </body>
 </html>
