@@ -45,9 +45,6 @@ table, tr, td {
   border-spacing: 0; }
 
 /*reset end */
-section {
-  border-bottom: 1px solid white; }
-
 html {
   background-color: black;
   background-image: url(img/bgimg.png);
