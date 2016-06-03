@@ -1,0 +1,164 @@
+@charset "UTF-8";
+html {
+  height: 100%; }
+
+body {
+  font: 12px/20px 'open sans',sans-serif, "微軟正黑體" !important;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+/*reset*/
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0; }
+
+br {
+  display: block;
+  margin: 0 0 5px; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body > img {
+  display: none; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+a, a:active, a:visited, a:hover {
+  outline: none;
+  text-decoration: none;
+  color: black;
+  background-color: none;
+  display: block;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+table, tr, td {
+  padding: 0;
+  border-spacing: 0; }
+
+/*reset end */
+section{
+  border-bottom: 1px solid white;
+}
+
+html{
+  background-color: black;
+  background-image: url(img/bgimg.png);
+  background-size: 107%;
+  background-position-x:15%;
+  background-position-y:-1%;
+  body{
+    width: 100%;
+    color: white;
+    height: 100%;
+    nav{
+
+    }
+    
+    #home{
+      height: 100vh;
+      background-color: black;
+      background-image: url(img/bgimg.png);
+      background-size: 107%;
+      background-position-x:15%;
+      background-position-y:-1%;
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -175px;
+        margin-top: -230px;
+      }
+    }
+
+    #openhci2016{
+      height: 100vh;
+      .frame{
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%;
+        .title{
+          width: 20%;
+          float: left;
+          line-height: 14px;
+          .maintitle{}
+          .subtitle{
+            margin-top: 50px;
+          }
+        }
+        .content{
+          width: 70%;
+          float: right;
+          font-size: 20px;
+          line-height: 1.5em;
+          :nth-child(1){
+            font-size: 26px;
+          }
+        }
+      }
+    }
+
+    #introngoals{
+      height: 100vh;
+      .frame{
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%;
+        .title{
+          width: 20%;
+          float: left;
+          line-height: 14px;
+          .maintitle{}
+          .subtitle{
+            margin-top: 50px;
+          }
+        }
+        .content{
+          width: 70%;
+          float: right;
+          font-size: 20px;
+          line-height: 2em;
+        }
+      }
+    }
+
+    #program{
+      height: 100vh;
+    }
+
+    #registration{
+      height: 100vh;
+    }
+
+    #crew{
+      height: 100vh;
+    }
+
+    #contact{
+      height: 100vh;
+      img{
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: 100px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
