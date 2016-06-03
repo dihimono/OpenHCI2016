@@ -17,7 +17,13 @@
     		$('.carousel').carousel({
       		interval: false
     		})
-  		});    
+
+    		$('.nav li a').click(function () {
+    			$('.nav li').removeClass('active');
+    			$(this).parent().addClass('active');
+    		})
+  		});
+
 	</script>
 	
 
