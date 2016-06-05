@@ -7,6 +7,8 @@
 	<title>OpenHCI 2016 | 超覺未來</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- bootstrap and jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -20,9 +22,6 @@
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-	<!-- scroll to element -->
-
 
 <!-- <style>
 body {background-color:lightgrey;}
@@ -64,7 +63,7 @@ body {background-color:lightgrey;}
 		Home
 	-->
 	<section id="home">
-		<img src="img/home_title.png">
+		<img src="img/home/home_title.png">
 	</section>
 
 	<!--
@@ -73,9 +72,9 @@ body {background-color:lightgrey;}
 	<section id="openhci2016">
 		<div class="frame">
 			<div class="title">
-				<img src="img/openhci2016-maintitle.png" class="maintitle">
+				<img src="img/open/openhci2016-maintitle.png" class="maintitle">
 				<div class="subtitle">
-					7th.student organized workshop on human-computer interaction
+					7th student-organized workshop on human-computer interaction
 				</div>
 			</div>
 			<div class="content">
@@ -107,67 +106,147 @@ body {background-color:lightgrey;}
 	<section id="introngoals">
 		<div class="frame">
 			<div class="title">
-				<img src="img/introngoals-maintitle.png" class="maintitle">
+				<img src="img/intro/introngoals-maintitle.png" class="maintitle">
 				<div class="subtitle">
-					7th.student organized workshop on human-computer interaction
+					7th student-organized workshop on human-computer interaction
 				</div>
 			</div>
 			<div class="content">
+				<h2>What is HCI</h3>
 				<p>
 					Human-Computer Interaction （HCI）為近年來相當活躍的跨領域學門。相較於其他專門領域，HCI學門獨特的複合特性，使得其創造過程需要高度的跨領域合作。研究的著眼點不但訴求技術、更試圖從以人為本的角度去探討，以創造更佳的使用者經驗。
 				</p>
 				</br>
+				<h2>History of OpenHCI</h3>
 				<p>
-					活動希望能夠以推廣HCI為主要宗旨，招收工程與設計背景的學生、共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧的人機互動遠景。
+					OpenHCI 2016是第七屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
+				</p>
+				</br>		
+				<p>
+					本活動希望能夠以推廣HCI為主要宗旨，招收工程與設計背景的學生、共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧的人機互動遠景。
 				</p>
 			</div>
 		</div>
 	</section>
 
-	<!--
-		Schedule part. I believe the carousel indicators can be modified to be the day list
-	-->
 	<section id="program">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-4">
-					<center><h2>schedule</h2></center><br>
-					<center>here is the day list for href</center>
+		<div class="frame">
+			<div class="title">
+				<img class="main-title" src="img/program/program-title.png">
+				<div class="subtitle">
+					7th student-organized workshop on human-computer interaction
 				</div>
-				<div class="col-lg-8">
-					<br><br><br>
-					<div id="dayScehdule" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#dayScehdule" data-slide-to="0" class="active"></li>
-							<li data-target="#dayScehdule" data-slide-to="1"></li>
-							<li data-target="#dayScehdule" data-slide-to="2"></li>
-							<li data-target="#dayScehdule" data-slide-to="3"></li>
-							<li data-target="#dayScehdule" data-slide-to="4"></li>
-							<li data-target="#dayScehdule" data-slide-to="5"></li>
-						</ol>
-						<div class="carousel-inner" role="list-box">
-							<div class="item active">
-								<center>this should be day 1</center>
-							</div>
-							<div class="item">
-								<center>day 2 is here</center>
-							</div>
-							<div class="item">
-								<center>day 3 is here</center>
-							</div>
-							<div class="item">
-								<center>day 4 is here</center>
-							</div>
-							<div class="item">
-								<center>day 5 is here</center>
-							</div>
-							<div class="item">
-								<center>last day is here</center>
-							</div>
-						</div>
+			</div>
+			
+			<div id="schedule">
+				<ul class="days">
+					<li><a href="#day1"><div class="day1"></div></a></li>
+					<li><a href="#day2"><div class="day2"></div></a></li>
+					<li><a href="#day3"><div class="day3"></div></a></li>
+					<li><a href="#day4"><div class="day4"></div></a></li>
+					<li><a href="#day5"><div class="day5"></div></a></li>
+					<li><a href="#day6"><div class="day6"></div></a></li>
+				</ul>
+				<div class="time-container">
+					<div id="day1" class="day1-time">
+						<h2>DAY 1</h2>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+					</div>
+					<div id="day2" class="day2-time">
+						<h2>DAY 2</h2>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+					</div>
+					<div id="day3" class="day3-time">
+						<h2>DAY 3</h2>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+					</div>
+					<div id="day4" class="day4-time">
+						<h2>DAY 4</h2>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+					</div>
+					<div id="day5" class="day5-time">
+						<h2>DAY 5</h2>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+					</div>
+					<div id="day6" class="day6-time">
+						<h2>DAY 6</h2>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
+						<p>08:00 - 08:50 學員報到</p>
 					</div>
 				</div>
 			</div>
+
+			<!-- <div id="daySchedule" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#daySchedule" data-slide-to="0" class="active"></li>
+					<li data-target="#daySchedule" data-slide-to="1"></li>
+					<li data-target="#daySchedule" data-slide-to="2"></li>
+					<li data-target="#daySchedule" data-slide-to="3"></li>
+					<li data-target="#daySchedule" data-slide-to="4"></li>
+					<li data-target="#daySchedule" data-slide-to="5"></li>
+				</ol>
+				<div class="carousel-inner time" role="list-box">
+					<div class="item active">
+						<div class="test"></div>
+					</div>
+					<div class="item">
+						<div class="test"></div>
+					</div>
+					<div class="item">
+						<div class="test"></div>
+					</div>
+					<div class="item">
+						<div class="test"></div>
+					</div>
+					<div class="item">
+						<div class="test"></div>
+					</div>
+					<div class="item">
+						<div class="test"></div>
+					</div>
+				</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -218,7 +297,7 @@ body {background-color:lightgrey;}
 	</section>
 
 	<section id="contact">
-		<img src="img/contact.png">
+		<img src="img/contact/contact.png">
 	</section>
 
 

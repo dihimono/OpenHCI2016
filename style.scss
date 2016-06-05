@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 html {
   height: 100%; }
 
 body {
-  font: 12px/20px 'open sans',sans-serif, "微軟正黑體" !important;
+  font: 16px/20px 'open sans',sans-serif, 'Noto Sans TC',"微軟正黑體" !important;
   margin: 0;
   padding: 0;
   height: 100%; }
@@ -35,7 +37,6 @@ img {
 a, a:active, a:visited, a:hover {
   outline: none;
   text-decoration: none;
-  color: black;
   background-color: none;
   display: block;
   -webkit-tap-highlight-color: transparent; 
@@ -51,26 +52,22 @@ table, tr, td {
 // }
 
 html{
-  background-color: black;
-  background-image: url(img/bgimg.png);
-  background-size: 107%;
-  background-position-x:15%;
-  background-position-y:-1%;
   body{
     width: 100%;
     color: white;
     height: 100%;
+    background-color: black;
     nav{
 
     }
     
     #home{
       height: 100vh;
-      background-color: black;
-      background-image: url(img/bgimg.png);
-      background-size: 107%;
-      background-position-x:15%;
-      background-position-y:-1%;
+      // background-color: black;
+      // background-image: url(img/bgimg.png);
+      // background-size: 107%;
+      // background-position-x:15%;
+      // background-position-y:-1%;
       img{
         position: absolute;
         left: 50%;
@@ -93,12 +90,12 @@ html{
           .maintitle{}
           .subtitle{
             margin-top: 50px;
+            font-size: 12px;
           }
         }
         .content{
           width: 70%;
           float: right;
-          font-size: 20px;
           line-height: 1.5em;
           :nth-child(1){
             font-size: 26px;
@@ -120,19 +117,103 @@ html{
           .maintitle{}
           .subtitle{
             margin-top: 50px;
+            font-size: 12px;
           }
         }
         .content{
           width: 70%;
           float: right;
-          font-size: 20px;
-          line-height: 2em;
+          line-height: 1.5em;
+          h2{
+            margin-bottom: 10px;
+          }
         }
       }
     }
 
     #program{
       height: 100vh;
+      .frame{
+        width: 1068px;
+        margin: auto;
+        padding: 10% 2% 0 2%;
+        .title{
+          .main-title{
+            display: inline-block;
+          }
+          .subtitle{
+            width: 230px;
+            display: inline-block;
+          }
+        }
+        #schedule{
+          .days{
+            display: block;
+            width: 30%;
+            float: left;
+            li{
+              border-left: 1px solid white;
+              background-color: none;
+              a{
+                display: block;
+                color: white;
+                .day1{
+                  width: 71px;
+                  height: 26px;
+                  border-image: url(img/program/day1.png);
+                  background-size: cover;
+                }
+                .day2{
+                  width: 71px;
+                  height: 26px;
+                  border-image: url(img/program/day2.png);
+                  background-size: cover;
+                }
+                .day3{
+                  width: 71px;
+                  height: 26px;
+                  border-image: url(img/program/day3.png);
+                  background-size: cover;
+                }
+                .day4{
+                  width: 71px;
+                  height: 26px;
+                  border-image: url(img/program/day4.png);
+                  background-size: cover;
+                }
+                .day5{
+                  width: 71px;
+                  height: 26px;
+                  border-image: url(img/program/day5.png);
+                  background-size: cover;
+                }
+                .day6{
+                  width: 71px;
+                  height: 26px;
+                  border-image: url(img/program/day6.png);
+                  background-size: cover;
+                }
+              }
+            }
+            li.active{
+              background-color: yellow;
+              a{
+                font-size: 28px;
+              }
+            }
+          }
+          .time-container{
+            width: 70%;
+            float: right;
+            .day1-time{}
+            .day2-time{}
+            .day3-time{}
+            .day4-time{}
+            .day5-time{}
+            .day6-time{}
+          }
+        }
+      }
     }
 
     #registration{

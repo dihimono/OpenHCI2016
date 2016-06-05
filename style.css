@@ -1,9 +1,10 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 html {
   height: 100%; }
 
 body {
-  font: 12px/20px 'open sans',sans-serif, "微軟正黑體" !important;
+  font: 16px/20px 'open sans',sans-serif, 'Noto Sans TC',"微軟正黑體" !important;
   margin: 0;
   padding: 0;
   height: 100%; }
@@ -35,7 +36,6 @@ img {
 a, a:active, a:visited, a:hover {
   outline: none;
   text-decoration: none;
-  color: black;
   background-color: none;
   display: block;
   -webkit-tap-highlight-color: transparent; }
@@ -45,77 +45,125 @@ table, tr, td {
   border-spacing: 0; }
 
 /*reset end */
-html {
-  background-color: black;
-  background-image: url(img/bgimg.png);
-  background-size: 107%;
-  background-position-x: 15%;
-  background-position-y: -1%; }
-  html body {
-    width: 100%;
-    color: white;
-    height: 100%; }
-    html body #home {
-      height: 100vh;
-      background-color: black;
-      background-image: url(img/bgimg.png);
-      background-size: 107%;
-      background-position-x: 15%;
-      background-position-y: -1%; }
-      html body #home img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -175px;
-        margin-top: -230px; }
-    html body #openhci2016 {
-      height: 100vh; }
-      html body #openhci2016 .frame {
-        width: 1068px;
-        margin: auto;
-        padding: 10% 4% 0 2%; }
-        html body #openhci2016 .frame .title {
-          width: 20%;
-          float: left;
-          line-height: 14px; }
-          html body #openhci2016 .frame .title .subtitle {
-            margin-top: 50px; }
-        html body #openhci2016 .frame .content {
-          width: 70%;
-          float: right;
-          font-size: 20px;
-          line-height: 1.5em; }
-          html body #openhci2016 .frame .content :nth-child(1) {
-            font-size: 26px; }
-    html body #introngoals {
-      height: 100vh; }
-      html body #introngoals .frame {
-        width: 1068px;
-        margin: auto;
-        padding: 10% 4% 0 2%; }
-        html body #introngoals .frame .title {
-          width: 20%;
-          float: left;
-          line-height: 14px; }
-          html body #introngoals .frame .title .subtitle {
-            margin-top: 50px; }
-        html body #introngoals .frame .content {
-          width: 70%;
-          float: right;
-          font-size: 20px;
-          line-height: 2em; }
-    html body #program {
-      height: 100vh; }
-    html body #registration {
-      height: 100vh; }
-    html body #crew {
-      height: 100vh; }
-    html body #contact {
-      height: 100vh; }
-      html body #contact img {
-        position: absolute;
-        left: 50%;
-        margin-left: -150px;
-        margin-top: 100px; }
+html body {
+  width: 100%;
+  color: white;
+  height: 100%;
+  background-color: black; }
+  html body #home {
+    height: 100vh; }
+    html body #home img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -175px;
+      margin-top: -230px; }
+  html body #openhci2016 {
+    height: 100vh; }
+    html body #openhci2016 .frame {
+      width: 1068px;
+      margin: auto;
+      padding: 10% 4% 0 2%; }
+      html body #openhci2016 .frame .title {
+        width: 20%;
+        float: left;
+        line-height: 14px; }
+        html body #openhci2016 .frame .title .subtitle {
+          margin-top: 50px;
+          font-size: 12px; }
+      html body #openhci2016 .frame .content {
+        width: 70%;
+        float: right;
+        line-height: 1.5em; }
+        html body #openhci2016 .frame .content :nth-child(1) {
+          font-size: 26px; }
+  html body #introngoals {
+    height: 100vh; }
+    html body #introngoals .frame {
+      width: 1068px;
+      margin: auto;
+      padding: 10% 4% 0 2%; }
+      html body #introngoals .frame .title {
+        width: 20%;
+        float: left;
+        line-height: 14px; }
+        html body #introngoals .frame .title .subtitle {
+          margin-top: 50px;
+          font-size: 12px; }
+      html body #introngoals .frame .content {
+        width: 70%;
+        float: right;
+        line-height: 1.5em; }
+        html body #introngoals .frame .content h2 {
+          margin-bottom: 10px; }
+  html body #program {
+    height: 100vh; }
+    html body #program .frame {
+      width: 1068px;
+      margin: auto;
+      padding: 10% 2% 0 2%; }
+      html body #program .frame .title .main-title {
+        display: inline-block; }
+      html body #program .frame .title .subtitle {
+        width: 230px;
+        display: inline-block; }
+      html body #program .frame #schedule .days {
+        display: block;
+        width: 30%;
+        float: left; }
+        html body #program .frame #schedule .days li {
+          border-left: 1px solid white;
+          background-color: none; }
+          html body #program .frame #schedule .days li a {
+            display: block;
+            color: white; }
+            html body #program .frame #schedule .days li a .day1 {
+              width: 71px;
+              height: 26px;
+              border-image: url(img/program/day1.png);
+              background-size: cover; }
+            html body #program .frame #schedule .days li a .day2 {
+              width: 71px;
+              height: 26px;
+              border-image: url(img/program/day2.png);
+              background-size: cover; }
+            html body #program .frame #schedule .days li a .day3 {
+              width: 71px;
+              height: 26px;
+              border-image: url(img/program/day3.png);
+              background-size: cover; }
+            html body #program .frame #schedule .days li a .day4 {
+              width: 71px;
+              height: 26px;
+              border-image: url(img/program/day4.png);
+              background-size: cover; }
+            html body #program .frame #schedule .days li a .day5 {
+              width: 71px;
+              height: 26px;
+              border-image: url(img/program/day5.png);
+              background-size: cover; }
+            html body #program .frame #schedule .days li a .day6 {
+              width: 71px;
+              height: 26px;
+              border-image: url(img/program/day6.png);
+              background-size: cover; }
+        html body #program .frame #schedule .days li.active {
+          background-color: yellow; }
+          html body #program .frame #schedule .days li.active a {
+            font-size: 28px; }
+      html body #program .frame #schedule .time-container {
+        width: 70%;
+        float: right; }
+  html body #registration {
+    height: 100vh; }
+  html body #crew {
+    height: 100vh; }
+  html body #contact {
+    height: 100vh; }
+    html body #contact img {
+      position: absolute;
+      left: 50%;
+      margin-left: -150px;
+      margin-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */
