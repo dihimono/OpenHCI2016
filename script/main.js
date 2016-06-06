@@ -8,6 +8,10 @@ $(document).ready(function(){
       $(this).parent().addClass('active');
     })
 
+    $('#person').mouseover(function () {
+      $(this).addClass('pulse');
+    })
+
     // scroll to element
     $('nav a[href^="#"]').on('click',function (e) {
       e.preventDefault();
@@ -18,7 +22,7 @@ $(document).ready(function(){
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top
       }, 900, 'swing');
-  });
+    });
 });
 
 $(function(){
@@ -45,6 +49,5 @@ $(function(){
   });
 });
 
-$(function() {
-  $( "#accordion" ).accordion();
-});
+
+

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800,900);
 html {
   height: 100%; }
 
@@ -282,6 +283,48 @@ html {
             margin-bottom: 10px; }
     html body #crew {
       height: 100vh; }
+      html body #crew #crewList {
+        width: 1068px;
+        margin: auto;
+        padding: 8% 4% 0 2%;
+        height: 750px; }
+        html body #crew #crewList .carousel-inner .item .crewtitle {
+          width: 40%;
+          height: 125px;
+          background: -moz-linear-gradient(left, #ff0066 0%, #00a8a0 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, #ff0066 0%, #00a8a0 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, #ff0066 0%, #00a8a0 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='#00a8a0',GradientType=1 );
+          padding-top: 10px;
+          padding-left: 1px; }
+          html body #crew #crewList .carousel-inner .item .crewtitle img {
+            float: left; }
+          html body #crew #crewList .carousel-inner .item .crewtitle .subtitle {
+            float: left;
+            width: 180px;
+            font-size: 12px;
+            line-height: 1.2em;
+            margin-left: 30%; }
+        html body #crew #crewList .carousel-inner .item .box {
+          width: calc(100%/3);
+          float: left;
+          padding-right: 50px; }
+          html body #crew #crewList .carousel-inner .item .box h4 {
+            margin: 40px 0 20px 0;
+            font-family: 'Work Sans';
+            font-weight: 600; }
+          html body #crew #crewList .carousel-inner .item .box .person:hover .name {
+            color: #10c6b9;
+            transition: color 0.3s ease; }
+          html body #crew #crewList .carousel-inner .item .box .person .name {
+            margin: 10px 0 3px 0; }
+          html body #crew #crewList .carousel-inner .item .box .person .describtion {
+            font-size: 12px;
+            font-weight: lighter;
+            line-height: 1.3em; }
     html body #contact {
       height: 100vh; }
       html body #contact img {
