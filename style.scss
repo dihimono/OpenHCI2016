@@ -52,6 +52,7 @@ table, tr, td {
 // }
 
 html{
+  overflow-x: hidden;
   body{
     width: 100%;
     color: white;
@@ -142,70 +143,154 @@ html{
             display: inline-block;
           }
           .subtitle{
-            width: 230px;
+            width: 180px;
             display: inline-block;
+            font-size: 12px;
+            line-height: 1.2em;
+            margin-left: 20px;
           }
         }
         #schedule{
+          margin-top: 50px;
           .days{
             display: block;
-            width: 30%;
+            width: 160px;
             float: left;
+            border-left: 1px solid white;
+            padding-left: 45px;
             li{
-              border-left: 1px solid white;
-              background-color: none;
+              margin-bottom: 43px;
               a{
                 display: block;
                 color: white;
-                .day1{
-                  width: 71px;
-                  height: 26px;
-                  border-image: url(img/program/day1.png);
-                  background-size: cover;
-                }
-                .day2{
-                  width: 71px;
-                  height: 26px;
-                  border-image: url(img/program/day2.png);
-                  background-size: cover;
-                }
-                .day3{
-                  width: 71px;
-                  height: 26px;
-                  border-image: url(img/program/day3.png);
-                  background-size: cover;
-                }
-                .day4{
-                  width: 71px;
-                  height: 26px;
-                  border-image: url(img/program/day4.png);
-                  background-size: cover;
-                }
-                .day5{
-                  width: 71px;
-                  height: 26px;
-                  border-image: url(img/program/day5.png);
-                  background-size: cover;
-                }
-                .day6{
-                  width: 71px;
-                  height: 26px;
-                  border-image: url(img/program/day6.png);
-                  background-size: cover;
-                }
               }
             }
+            :nth-child(6){
+              margin-bottom: 0px;
+            }
+            .day1{
+              &:before{
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                background-color: #ec125b;
+                border-radius: 50%;
+                content: 't';
+                font-size: 0px;
+                color: #ec125b;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: -5px;
+              }
+
+            }
+            .day2{
+              &:before{
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                background-color: #c52a66;
+                border-radius: 50%;
+                content: 't';
+                font-size: 0px;
+                color: #c52a66;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: -5px;
+              }
+            }
+            .day3{
+              &:before{
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                background-color: #9d4270;
+                border-radius: 50%;
+                content: 't';
+                font-size: 0px;
+                color: #9d4270;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: -5px;
+              }
+            }
+            .day4{
+              &:before{
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                background-color: #765a7b;
+                border-radius: 50%;
+                content: 't';
+                font-size: 0px;
+                color: #765a7b;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: -5px;
+              }
+            }
+            .day5{
+              &:before{
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                background-color: #4f7386;
+                border-radius: 50%;
+                content: 't';
+                font-size: 0px;
+                color: #4f7386;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: -5px;
+              }
+            }
+            .day6{
+              &:before{
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                background-color: #00a39b;
+                border-radius: 50%;
+                content: 't';
+                font-size: 0px;
+                color: #00a39b;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: -5px;
+              }
+            }
+                            
             li.active{
-              background-color: yellow;
+              background: #ec125b; /* Old browsers */
+              background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%); /* FF3.6-15 */
+              background: -webkit-linear-gradient(left, #ec125b 0%,#00a8a0 100%); /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to right, #ec125b 0%,#00a8a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='#00a8a0',GradientType=1 );
               a{
                 font-size: 28px;
               }
             }
           }
           .time-container{
-            width: 70%;
+            width: 75%;
             float: right;
-            .day1-time{}
+            .day1-time, .day2-time, .day3-time, .day4-time, .day5-time, .day6-time,{
+              h1{
+                img{
+                  margin-right: 10px;
+                }
+              }
+              .date{
+                font-size: 22px;
+                margin-bottom: 30px;
+              }
+              p{
+                margin-bottom: 15px;
+                span{
+                  margin-right: 15px;
+                }
+              }
+            }
             .day2-time{}
             .day3-time{}
             .day4-time{}

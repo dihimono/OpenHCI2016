@@ -45,125 +45,194 @@ table, tr, td {
   border-spacing: 0; }
 
 /*reset end */
-html body {
-  width: 100%;
-  color: white;
-  height: 100%;
-  background-color: black; }
-  html body #home {
-    height: 100vh; }
-    html body #home img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -175px;
-      margin-top: -230px; }
-  html body #openhci2016 {
-    height: 100vh; }
-    html body #openhci2016 .frame {
-      width: 1068px;
-      margin: auto;
-      padding: 10% 4% 0 2%; }
-      html body #openhci2016 .frame .title {
-        width: 20%;
-        float: left;
-        line-height: 14px; }
-        html body #openhci2016 .frame .title .subtitle {
-          margin-top: 50px;
-          font-size: 12px; }
-      html body #openhci2016 .frame .content {
-        width: 70%;
-        float: right;
-        line-height: 1.5em; }
-        html body #openhci2016 .frame .content :nth-child(1) {
-          font-size: 26px; }
-  html body #introngoals {
-    height: 100vh; }
-    html body #introngoals .frame {
-      width: 1068px;
-      margin: auto;
-      padding: 10% 4% 0 2%; }
-      html body #introngoals .frame .title {
-        width: 20%;
-        float: left;
-        line-height: 14px; }
-        html body #introngoals .frame .title .subtitle {
-          margin-top: 50px;
-          font-size: 12px; }
-      html body #introngoals .frame .content {
-        width: 70%;
-        float: right;
-        line-height: 1.5em; }
-        html body #introngoals .frame .content h2 {
-          margin-bottom: 10px; }
-  html body #program {
-    height: 100vh; }
-    html body #program .frame {
-      width: 1068px;
-      margin: auto;
-      padding: 10% 2% 0 2%; }
-      html body #program .frame .title .main-title {
-        display: inline-block; }
-      html body #program .frame .title .subtitle {
-        width: 230px;
-        display: inline-block; }
-      html body #program .frame #schedule .days {
-        display: block;
-        width: 30%;
-        float: left; }
-        html body #program .frame #schedule .days li {
-          border-left: 1px solid white;
-          background-color: none; }
-          html body #program .frame #schedule .days li a {
+html {
+  overflow-x: hidden; }
+  html body {
+    width: 100%;
+    color: white;
+    height: 100%;
+    background-color: black; }
+    html body #home {
+      height: 100vh; }
+      html body #home img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -175px;
+        margin-top: -230px; }
+    html body #openhci2016 {
+      height: 100vh; }
+      html body #openhci2016 .frame {
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%; }
+        html body #openhci2016 .frame .title {
+          width: 20%;
+          float: left;
+          line-height: 14px; }
+          html body #openhci2016 .frame .title .subtitle {
+            margin-top: 50px;
+            font-size: 12px; }
+        html body #openhci2016 .frame .content {
+          width: 70%;
+          float: right;
+          line-height: 1.5em; }
+          html body #openhci2016 .frame .content :nth-child(1) {
+            font-size: 26px; }
+    html body #introngoals {
+      height: 100vh; }
+      html body #introngoals .frame {
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%; }
+        html body #introngoals .frame .title {
+          width: 20%;
+          float: left;
+          line-height: 14px; }
+          html body #introngoals .frame .title .subtitle {
+            margin-top: 50px;
+            font-size: 12px; }
+        html body #introngoals .frame .content {
+          width: 70%;
+          float: right;
+          line-height: 1.5em; }
+          html body #introngoals .frame .content h2 {
+            margin-bottom: 10px; }
+    html body #program {
+      height: 100vh; }
+      html body #program .frame {
+        width: 1068px;
+        margin: auto;
+        padding: 10% 2% 0 2%; }
+        html body #program .frame .title .main-title {
+          display: inline-block; }
+        html body #program .frame .title .subtitle {
+          width: 180px;
+          display: inline-block;
+          font-size: 12px;
+          line-height: 1.2em;
+          margin-left: 20px; }
+        html body #program .frame #schedule {
+          margin-top: 50px; }
+          html body #program .frame #schedule .days {
             display: block;
-            color: white; }
-            html body #program .frame #schedule .days li a .day1 {
-              width: 71px;
-              height: 26px;
-              border-image: url(img/program/day1.png);
-              background-size: cover; }
-            html body #program .frame #schedule .days li a .day2 {
-              width: 71px;
-              height: 26px;
-              border-image: url(img/program/day2.png);
-              background-size: cover; }
-            html body #program .frame #schedule .days li a .day3 {
-              width: 71px;
-              height: 26px;
-              border-image: url(img/program/day3.png);
-              background-size: cover; }
-            html body #program .frame #schedule .days li a .day4 {
-              width: 71px;
-              height: 26px;
-              border-image: url(img/program/day4.png);
-              background-size: cover; }
-            html body #program .frame #schedule .days li a .day5 {
-              width: 71px;
-              height: 26px;
-              border-image: url(img/program/day5.png);
-              background-size: cover; }
-            html body #program .frame #schedule .days li a .day6 {
-              width: 71px;
-              height: 26px;
-              border-image: url(img/program/day6.png);
-              background-size: cover; }
-        html body #program .frame #schedule .days li.active {
-          background-color: yellow; }
-          html body #program .frame #schedule .days li.active a {
-            font-size: 28px; }
-      html body #program .frame #schedule .time-container {
-        width: 70%;
-        float: right; }
-  html body #registration {
-    height: 100vh; }
-  html body #crew {
-    height: 100vh; }
-  html body #contact {
-    height: 100vh; }
-    html body #contact img {
-      position: absolute;
-      left: 50%;
-      margin-left: -150px;
-      margin-top: 100px; }
+            width: 160px;
+            float: left;
+            border-left: 1px solid white;
+            padding-left: 45px; }
+            html body #program .frame #schedule .days li {
+              margin-bottom: 43px; }
+              html body #program .frame #schedule .days li a {
+                display: block;
+                color: white; }
+            html body #program .frame #schedule .days :nth-child(6) {
+              margin-bottom: 0px; }
+            html body #program .frame #schedule .days .day1:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #ec125b;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #ec125b;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px; }
+            html body #program .frame #schedule .days .day2:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #c52a66;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #c52a66;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px; }
+            html body #program .frame #schedule .days .day3:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #9d4270;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #9d4270;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px; }
+            html body #program .frame #schedule .days .day4:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #765a7b;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #765a7b;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px; }
+            html body #program .frame #schedule .days .day5:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #4f7386;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #4f7386;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px; }
+            html body #program .frame #schedule .days .day6:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #00a39b;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #00a39b;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px; }
+            html body #program .frame #schedule .days li.active {
+              background: #ec125b;
+              /* Old browsers */
+              background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+              /* FF3.6-15 */
+              background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+              /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
+              /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='#00a8a0',GradientType=1 ); }
+              html body #program .frame #schedule .days li.active a {
+                font-size: 28px; }
+          html body #program .frame #schedule .time-container {
+            width: 75%;
+            float: right; }
+            html body #program .frame #schedule .time-container .day1-time h1 img, html body #program .frame #schedule .time-container .day2-time h1 img, html body #program .frame #schedule .time-container .day3-time h1 img, html body #program .frame #schedule .time-container .day4-time h1 img, html body #program .frame #schedule .time-container .day5-time h1 img, html body #program .frame #schedule .time-container .day6-time h1 img {
+              margin-right: 10px; }
+            html body #program .frame #schedule .time-container .day1-time .date, html body #program .frame #schedule .time-container .day2-time .date, html body #program .frame #schedule .time-container .day3-time .date, html body #program .frame #schedule .time-container .day4-time .date, html body #program .frame #schedule .time-container .day5-time .date, html body #program .frame #schedule .time-container .day6-time .date {
+              font-size: 22px;
+              margin-bottom: 30px; }
+            html body #program .frame #schedule .time-container .day1-time p, html body #program .frame #schedule .time-container .day2-time p, html body #program .frame #schedule .time-container .day3-time p, html body #program .frame #schedule .time-container .day4-time p, html body #program .frame #schedule .time-container .day5-time p, html body #program .frame #schedule .time-container .day6-time p {
+              margin-bottom: 15px; }
+              html body #program .frame #schedule .time-container .day1-time p span, html body #program .frame #schedule .time-container .day2-time p span, html body #program .frame #schedule .time-container .day3-time p span, html body #program .frame #schedule .time-container .day4-time p span, html body #program .frame #schedule .time-container .day5-time p span, html body #program .frame #schedule .time-container .day6-time p span {
+                margin-right: 15px; }
+    html body #registration {
+      height: 100vh; }
+    html body #crew {
+      height: 100vh; }
+    html body #contact {
+      height: 100vh; }
+      html body #contact img {
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */
