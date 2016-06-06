@@ -1,8 +1,12 @@
+var canvas;
+
 function setup() {
-	
+	canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent("home");
 }
 
 function draw() {
-	ellipse(50, 50, 80, 80);
-	console.log("test");
+	fill(255, 0, 0);
+	ellipse(mouseX, mouseY, 80, 80);
+	console.log("draw " + mouseX + ", " + mouseY);
 }
