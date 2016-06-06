@@ -225,6 +225,61 @@ html {
                 margin-right: 15px; }
     html body #registration {
       height: 100vh; }
+      html body #registration .frame {
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%; }
+        html body #registration .frame .title {
+          width: 20%;
+          float: left;
+          line-height: 14px; }
+          html body #registration .frame .title .subtitle {
+            margin-top: 50px;
+            font-size: 12px; }
+          html body #registration .frame .title .button {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 50%;
+            color: white;
+            background: #ec125b;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='#00a8a0',GradientType=1 );
+            text-align: center;
+            font-size: 14px;
+            padding-top: 26%;
+            margin-top: 50px; }
+        html body #registration .frame .content {
+          width: 70%;
+          float: right;
+          line-height: 1.5em;
+          height: 70vh;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          padding-right: 15px;
+          padding-bottom: 20px; }
+          html body #registration .frame .content::-webkit-scrollbar {
+            width: 8px; }
+          html body #registration .frame .content::-webkit-scrollbar-track {
+            background-color: black; }
+          html body #registration .frame .content::-webkit-scrollbar-thumb {
+            background: #ec125b;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ec125b 0%, #00a8a0 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='#00a8a0',GradientType=1 ); }
+          html body #registration .frame .content h2 {
+            margin-bottom: 10px; }
     html body #crew {
       height: 100vh; }
     html body #contact {

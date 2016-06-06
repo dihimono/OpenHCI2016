@@ -44,3 +44,7 @@ $(function(){
     this.blur();
   });
 });
+
+$(function() {
+  $( "#accordion" ).accordion();
+});
