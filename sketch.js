@@ -41,7 +41,7 @@ function setup() {
 
 	//setup dots
 	dotCoreX = windowWidth / 2;
-	dotCoreY = windowHeight;
+	dotCoreY = 460;
 	dotNum = 15;
 	for(var i = 0;i < dotNum;i++) {
 		curDotX[i] = dotCoreX;
@@ -75,14 +75,14 @@ function drawDots() {
 		if(dotState[i] == true) {
 			// going outward
 			fill(dotColor[0], dotColor[1], dotColor[2]);
-			curDotX[i] += v.x;
-			curDotY[i] += v.y;
+			curDotX[i] += v.x * 2;
+			curDotY[i] += v.y * 2;
 			ellipse(curDotX[i], curDotY[i], dotR[i], dotR[i]);
 		}
 		else {
 			// going inward
-			curDotX[i] -= v.x;
-			curDotY[i] -= v.y;
+			curDotX[i] -= v.x * 2;
+			curDotY[i] -= v.y * 2;
 			ellipse(curDotX[i], curDotY[i], dotR[i], dotR[i]);
 		}
 		if(dist(curDotX[i], curDotY[i], dotX[i], dotY[i]) < 1)
@@ -148,6 +148,6 @@ function drawHorns() {
 function draw() {
 	clear();
 	drawDots();
-	drawLines();
-	drawHorns();
+	//drawLines();
+	//drawHorns();
 }
