@@ -736,10 +736,16 @@ html{
               font-weight: 600;
               color: white;
             }
-            .organizer{
+            .organizer, .co-organizer{
               display: inline-block;
               margin-right: 20px;
               color: white;
+            }
+            .sponsor{
+              display: inline-block;
+              margin-right: 20px;
+              width: auto;
+              height: 120px;
             }
           }
         }

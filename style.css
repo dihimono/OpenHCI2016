@@ -634,10 +634,15 @@ html {
           font-family: 'Work Sans';
           font-weight: 600;
           color: white; }
-        html body #crew #crewList .carousel-inner .item .organizer {
+        html body #crew #crewList .carousel-inner .item .organizer, html body #crew #crewList .carousel-inner .item .co-organizer {
           display: inline-block;
           margin-right: 20px;
           color: white; }
+        html body #crew #crewList .carousel-inner .item .sponsor {
+          display: inline-block;
+          margin-right: 20px;
+          width: auto;
+          height: 120px; }
         @media screen and (max-width: 1050px) {
           html body #crew #crewList {
             width: 90%;
