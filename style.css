@@ -320,7 +320,8 @@ html {
               color: #ec125b;
               position: absolute;
               margin-left: -63px;
-              margin-top: -5px; }
+              margin-top: -5px;
+              cursor: pointer; }
               @media screen and (max-width: 1050px) {
                 html body #program .frame #schedule .days .day1:before {
                   display: none; } }
@@ -335,7 +336,8 @@ html {
               color: #c52a66;
               position: absolute;
               margin-left: -63px;
-              margin-top: -5px; }
+              margin-top: -5px;
+              cursor: pointer; }
               @media screen and (max-width: 1050px) {
                 html body #program .frame #schedule .days .day2:before {
                   display: none; } }
@@ -350,7 +352,8 @@ html {
               color: #9d4270;
               position: absolute;
               margin-left: -63px;
-              margin-top: -5px; }
+              margin-top: -5px;
+              cursor: pointer; }
               @media screen and (max-width: 1050px) {
                 html body #program .frame #schedule .days .day3:before {
                   display: none; } }
@@ -365,7 +368,8 @@ html {
               color: #765a7b;
               position: absolute;
               margin-left: -63px;
-              margin-top: -5px; }
+              margin-top: -5px;
+              cursor: pointer; }
               @media screen and (max-width: 1050px) {
                 html body #program .frame #schedule .days .day4:before {
                   display: none; } }
@@ -380,7 +384,8 @@ html {
               color: #4f7386;
               position: absolute;
               margin-left: -63px;
-              margin-top: -5px; }
+              margin-top: -5px;
+              cursor: pointer; }
               @media screen and (max-width: 1050px) {
                 html body #program .frame #schedule .days .day5:before {
                   display: none; } }
@@ -395,7 +400,8 @@ html {
               color: #00a39b;
               position: absolute;
               margin-left: -63px;
-              margin-top: -5px; }
+              margin-top: -5px;
+              cursor: pointer; }
               @media screen and (max-width: 1050px) {
                 html body #program .frame #schedule .days .day6:before {
                   display: none; } }
