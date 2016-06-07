@@ -220,12 +220,16 @@ html{
 
     #introngoals{
       height: 100vh;
+
       .intro-bg{
         position: absolute;
         left: 50%;
         top: 200vh;
         margin-left: -630px;
         margin-top: -105px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
       }
       .snake{
         position: absolute;
@@ -233,6 +237,9 @@ html{
         left: 50%;
         margin-top: -640px;
         margin-left: -710px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
       }
       .frame{
         position: relative;
@@ -283,6 +290,16 @@ html{
 
     #program{
       height: 100vh;
+      .program-bg{
+        position: absolute;
+        top: 350vh;
+        left: 50%;
+        margin-top: -352px;
+        margin-left: -736px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .frame{
         position: relative;
         z-index: 999;
@@ -496,6 +513,16 @@ html{
 
     #registration{
       height: 100vh;
+      .registration-bg{
+        position: absolute;
+        top: 450vh;
+        left: 50%;
+        margin-top: -331px;
+        margin-left: -685px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .frame{
         position: relative;
         z-index: 999;

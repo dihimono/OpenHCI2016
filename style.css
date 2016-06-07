@@ -201,12 +201,18 @@ html {
         top: 200vh;
         margin-left: -630px;
         margin-top: -105px; }
+        @media screen and (max-width: 768px) {
+          html body #introngoals .intro-bg {
+            display: none; } }
       html body #introngoals .snake {
         position: absolute;
         top: 250vh;
         left: 50%;
         margin-top: -640px;
         margin-left: -710px; }
+        @media screen and (max-width: 768px) {
+          html body #introngoals .snake {
+            display: none; } }
       html body #introngoals .frame {
         position: relative;
         z-index: 999;
@@ -248,6 +254,15 @@ html {
           height: initial; } }
     html body #program {
       height: 100vh; }
+      html body #program .program-bg {
+        position: absolute;
+        top: 350vh;
+        left: 50%;
+        margin-top: -352px;
+        margin-left: -736px; }
+        @media screen and (max-width: 768px) {
+          html body #program .program-bg {
+            display: none; } }
       html body #program .frame {
         position: relative;
         z-index: 999;
@@ -418,6 +433,15 @@ html {
             padding: 100px 0 0 0; } }
     html body #registration {
       height: 100vh; }
+      html body #registration .registration-bg {
+        position: absolute;
+        top: 450vh;
+        left: 50%;
+        margin-top: -331px;
+        margin-left: -685px; }
+        @media screen and (max-width: 768px) {
+          html body #registration .registration-bg {
+            display: none; } }
       html body #registration .frame {
         position: relative;
         z-index: 999;
