@@ -70,24 +70,28 @@ html {
       position: fixed; }
     html body #home {
       height: 100vh; }
+      html body #home .bigball {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -720px;
+        margin-top: -60px;
+        z-index: -1; }
+        @media screen and (max-width: 768px) {
+          html body #home .bigball {
+            display: none; } }
       html body #home .background {
-        width: 100%;
+        width: 1440px;
         height: 100vh;
         position: absolute;
-        left: 0;
+        left: 50%;
         top: 0;
+        margin-left: -720px;
         background-image: url(img/home/bg/home_bg.png);
         background-size: 102%;
         background-repeat: no-repeat;
         background-position-y: 43%;
         background-position-x: 33%; }
-        html body #home .background .bigball {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-left: -720px;
-          margin-top: -60px;
-          z-index: -1; }
         @media screen and (max-width: 768px) {
           html body #home .background {
             display: none; } }
@@ -105,16 +109,57 @@ html {
             margin-top: -200px; } }
     html body #openhci2016 {
       height: 100vh; }
+      html body #openhci2016 .biggreen {
+        position: absolute;
+        top: 150vh;
+        left: 50%;
+        width: 642px;
+        height: 610px;
+        background-color: #00a39b;
+        border-radius: 50%;
+        z-index: -3;
+        margin-left: -250px;
+        margin-top: -270px; }
+        @media screen and (max-width: 768px) {
+          html body #openhci2016 .biggreen {
+            display: none; } }
       html body #openhci2016 .background {
-        width: 100%;
+        width: 1440px;
         height: 100vh;
         position: absolute;
-        left: 0;
-        top: 0; }
+        left: 50%;
+        top: 100vh;
+        margin-left: -720px;
+        background-image: url(img/open/bg/open_bg.png);
+        background-size: cover;
+        z-index: 0; }
+        html body #openhci2016 .background .sun {
+          width: 59px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: 510px;
+          margin-top: -210px; }
+        html body #openhci2016 .background .eye {
+          width: 55px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: 512px;
+          margin-top: -310px; }
+        html body #openhci2016 .background .slash {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 12px;
+          margin-left: -620px;
+          margin-top: 170px; }
         @media screen and (max-width: 768px) {
           html body #openhci2016 .background {
             display: none; } }
       html body #openhci2016 .frame {
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 4% 0 2%; }
@@ -151,6 +196,8 @@ html {
     html body #introngoals {
       height: 100vh; }
       html body #introngoals .frame {
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 4% 0 2%; }
@@ -190,6 +237,8 @@ html {
     html body #program {
       height: 100vh; }
       html body #program .frame {
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 2% 0 2%; }
@@ -358,6 +407,8 @@ html {
     html body #registration {
       height: 100vh; }
       html body #registration .frame {
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 4% 0 2%; }
@@ -525,6 +576,8 @@ html {
     html body #contact {
       height: 100vh; }
       html body #contact .frame {
+        position: relative;
+        z-index: 999;
         width: 1064px;
         padding: 10% 3% 0 3%;
         margin: auto;

@@ -9,17 +9,7 @@
   100% {  opacity: 0.9; box-shadow: 0 0 9px #333; }
 }
 
-// @-webkit-keyframes pinkPulse {
-//   0% {  opacity: 0.9; -webkit-box-shadow: 0 0 9px #333; }
-//   50% {   opacity: 1; -webkit-box-shadow: 0 0 30px #00a8a0; }
-//   100% {  opacity: 0.9; -webkit-box-shadow: 0 0 9px #333; }
-// }
 
-// @-moz-keyframes pinkPulse {
-//   0% {  opacity: 0.9; -moz-box-shadow: 0 0 9px #333; }
-//   50% {   opacity: 1; -moz-box-shadow: 0 0 30px #00a8a0; }
-//   100% {  opacity: 0.9; -moz-box-shadow: 0 0 9px #333; }
-// }
 
 html {
   height: 100%; }
@@ -87,25 +77,29 @@ html{
     
     #home{
       height: 100vh;
+      .bigball{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -720px;
+        margin-top: -60px;
+        z-index: -1; 
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .background{
-        width: 100%;
+        width: 1440px;
         height: 100vh;
         position: absolute;
-        left: 0;
+        left: 50%;
         top: 0;
+        margin-left: -720px;
         background-image: url(img/home/bg/home_bg.png);
         background-size: 102%;
         background-repeat: no-repeat;
         background-position-y: 43%;
         background-position-x: 33%;
-        .bigball{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-left: -720px;
-          margin-top: -60px;
-          z-index: -1; 
-        }
         @media screen and (max-width: 768px){
           display: none;
         }
@@ -127,17 +121,62 @@ html{
 
     #openhci2016{
       height: 100vh;
+      .biggreen{
+        position: absolute;
+        top: 150vh;
+        left: 50%;
+        width: 642px;
+        height: 610px;
+        background-color: #00a39b;
+        border-radius: 50%;
+        z-index: -3;
+        margin-left: -250px;
+        margin-top: -270px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .background{
-        width: 100%;
+        width: 1440px;
         height: 100vh;
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 50%;
+        top: 100vh;
+        margin-left: -720px;
+        background-image: url(img/open/bg/open_bg.png);
+        background-size: cover;
+        z-index: 0;
+        .sun{
+          width: 59px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: 510px;
+          margin-top: -210px;
+        }
+        .eye{
+          width: 55px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: 512px;
+          margin-top: -310px;
+        }
+        .slash{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 12px;
+          margin-left: -620px;
+          margin-top: 170px;
+        }
         @media screen and (max-width: 768px){
           display: none;
         }
       }
       .frame{
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 4% 0 2%;
@@ -182,6 +221,8 @@ html{
     #introngoals{
       height: 100vh;
       .frame{
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 4% 0 2%;
@@ -229,6 +270,8 @@ html{
     #program{
       height: 100vh;
       .frame{
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 2% 0 2%;
@@ -440,6 +483,8 @@ html{
     #registration{
       height: 100vh;
       .frame{
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
         padding: 10% 4% 0 2%;
@@ -629,6 +674,8 @@ html{
     #contact{
       height: 100vh;
       .frame{
+        position: relative;
+        z-index: 999;
         width: 1064px;
         padding: 10% 3% 0 3%;
         margin: auto;
