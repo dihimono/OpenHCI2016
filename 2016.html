@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+	<title>OpenHCI 2016 | 超覺未來</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OpenHCI 2016是第七屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！本活動希望能夠以推廣HCI為主要宗旨，招收工程與設計背景的學生、共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧的人機互動遠景。">
+
+	<!-- bootstrap and jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="script/bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="script/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
+
+	<!-- p5.js -->
+	<script type="text/javascript" src="script/p5js/p5.min.js"></script>
+	<script type='text/javascript' src="script/p5js/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="sketch.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+         new WOW().init();
+    </script>
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="icon" href="img/favicon.png" type="image/x-icon"/>
+ 	
+</head>
+<body>
+
+	<audio src="http://samanthalin.ddns.net/Digital-Diva.mp3" autoplay="autoplay" loop="-1"></audio>
+
+	<!-- fixed menu bar -->
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            		<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          		</button>
+				<a class="navbar-brand" href="#"> OpenHCI 2016 </a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#openhci2016">OpenHCI 2016</a></li>
+					<li><a href="#introngoals">Intro &amp Goals</a></li>
+					<li><a href="#program">Program</a></li>
+					<li><a href="#registration">Registration</a></li>
+					<li><a href="#crew">Crew</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--
+		Home
+	-->
+	<section id="home">
+		<img src="img/home/bg/cone.png" class="cone">
+		<img src="img/home/bg/bigball.png" class="bigball">
+		<div class="background"></div>
+		<img src="img/home/home_title.png" class="wow fadeIn">
+	</section>
+
+	<!--
+		OpenHCI 2016
+	-->	
+	<section id="openhci2016">
+		<div class="biggreen"></div>
+		<div class="background">
+			<img src="img/open/bg/eye.gif" class="eye">
+			<img src="img/open/bg/sun.gif" class="sun">
+			<img src="img/open/bg/slash.png" class="slash">
+		</div>
+		<div class="frame">
+			<div class="title wow bounceInDown">
+				<img src="img/open/openhci2016-maintitle.png" class="maintitle">
+				<div class="subtitle">
+					<strong>7th</strong> student-organized workshop on human-computer interaction
+				</div>
+			</div>
+			<div class="content">
+				<p>
+					超覺未來Gitopia
+				</p>
+				</br>
+				<p>
+					「科技流動於人與環境之間，達到平衡而完美的世界」
+				</p>
+				</br>
+				<p>
+					「超覺未來 Gitopia」取自「未來科技」、「與人文結合」以及「提升知覺」等核心價值展開，希望透過主題串連六天的活動，帶領學員發想、小組合作、建構、實現互動展示物。
+				</p>
+				<p>
+					過去，我們總如此的想像：當科技突破人的想像、文明超越形體的限制之後，人類將擁有更廣闊的覺知、知識、能力與情感。現在，將時光的尺度收縮拉至眼前，等待未來最快捷的路徑就是創造，期待夢想中的世界在此展開。
+				</p>
+				<p>
+					除了團隊合作，一系列的講座與議題討論，聚焦於當今互動設計、人機互動領域中的課題，探討人與智慧物件在物連網時代下的新互動模式以及其設計框架。
+				</p>
+			</div>
+		</div>	
+	</section>
+
+	<!--
+		Intro & Goals
+	-->
+
+	<section id="introngoals">
+		<img src="img/intro/bg/intro_bg.png" class="intro-bg">
+		<img src="img/intro/bg/snake.png" class="snake">
+		<div class="frame">
+			<div class="title wow bounceInDown">
+				<img src="img/intro/introngoals-maintitle.png" class="maintitle">
+				<div class="subtitle">
+					<strong>7th</strong> student-organized workshop on human-computer interaction
+				</div>
+			</div>
+			<div class="content">
+				<h2>What is HCI</h2>
+				<p>
+					Human-Computer Interaction （HCI）為近年來相當活躍的跨領域學門。相較於其他專門領域，HCI學門獨特的複合特性，使得其創造過程需要高度的跨領域合作。研究的著眼點不但訴求技術、更試圖從以人為本的角度去探討，以創造更佳的使用者經驗。
+				</p>
+				</br>
+				<h2>History of OpenHCI</h2>
+				<p>
+					OpenHCI 2016是第七屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
+				</p>
+				</br>		
+				<p>
+					本活動希望能夠以推廣HCI為主要宗旨，招收工程與設計背景的學生、共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧的人機互動遠景。
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Program -->
+	<section id="program">
+		<img src="img/program/bg/program_bg.png" class="program-bg">
+		<div class="frame">
+			<div class="title wow bounceInDown">
+				<img class="main-title" src="img/program/program-title.png">
+				<div class="subtitle">
+					<strong>7th</strong> student-organized workshop on human-computer interaction
+				</div>
+			</div>
+			
+			<div id="schedule">
+				<ul class="days">
+					<li class="day1">
+						<a href="#day1">
+							<img src="img/program/day1.png" class="day1">
+						</a>
+					</li>
+					<li class="day2">
+						<a href="#day2">
+							<img src="img/program/day2.png" class="day2">
+						</a>
+					</li>
+					<li class="day3">
+						<a href="#day3">
+							<img src="img/program/day3.png" class="day3">
+						</a>
+					</li>
+					<li class="day4">
+						<a href="#day4">
+							<img src="img/program/day4.png" class="day4">
+						</a>
+					</li>
+					<li class="day5">
+						<a href="#day5">
+							<img src="img/program/day5.png" class="day5">
+						</a>
+					</li>
+					<li class="day6">
+						<a href="#day6">
+							<img src="img/program/day6.png" class="day6">
+						</a>
+					</li>
+				</ul>
+				<div class="time-container">
+					<div id="day1" class="day1-time">
+						<h1><img src="img/program/day1_s.png">前置工作坊-實作教材行為與觀察</h1>
+						<div class="date">2016 / 7 / 5 Tuesday</div>
+						<p><span>08:00 - 08:50</span>學員報到</p>
+						<p><span>08:50 - 09:00</span>前置開場與說明</p>
+						<p><span>09:00 - 20:30</span>互動設計概論</p>
+						<p><span>10:40 - 12:10</span>設計方法</p>
+						<p><span>13:30 - 15:00</span>創意發想</p>
+						<p><span>15:10 - 16:40</span>設計實作</p>
+						<p><span>16:40 - 17:00</span>分享討論</p>
+					</div>
+					<div id="day2" class="day2-time">
+						<h1><img src="img/program/day2_s.png">行為與觀察</h1>
+						<div class="date">2016 / 7 / 6 Wednesday</div>
+						<p><span>08:30 - 08:50</span>學員報到</p>
+						<p><span>09:00 - 09:30</span>開幕式 及 開幕致詞</p>
+						<p><span>09:30 - 10:30</span>演講 I - 梁容豪 (HCI trend)</p>
+						<p><span>10:50 - 11:50</span>演講 II - 蔡志浩（觀察到設計）</p>
+						<p><span>13:00 - 13:30</span>觀察準備與討論</p>
+						<p><span>13:30 - 16:00</span>場域觀察</p>
+						<p><span>16:00 - 18:00</span>整理發表與分享</p>
+						<p><span>18:00 - 18:30</span>Brainstorming - 主題發想</p>
+					</div>
+					<div id="day3" class="day3-time">
+						<h1><img src="img/program/day3_s.png">發想與定義</h1>
+						<div class="date">2016 / 7 / 7 Thurthday</div>
+						<p><span>08:30 - 09:00</span>學員報到</p>
+						<p><span>09:00 - 09:30</span>故事前情提要</p>
+						<p><span>09:30 - 10:30</span>演講 III - 梁容輝（未來世界超能力）</p>
+						<p><span>10:50 - 11:50</span>演講 IV - 黃適文（Social Computing ）</p>
+						<p><span>13:00 - 13:30</span>前情提要: 各組 2 分鐘簡報</p>
+						<p><span>13:30 - 15:50</span>數位工具之應用教學</p>
+						<p><span>15:40 - 18:00</span>設計實作時間</p>
+					</div>
+					<div id="day4" class="day4-time">
+						<h1><img src="img/program/day4_s.png">實作與媒材 I</h1>
+						<div class="date">2016 / 7 / 8 Friday</div>
+						<p><span>08:30 - 09:00</span>學員報到</p>
+						<p><span>09:00 - 09:30</span>故事前情提要</p>
+						<p><span>09:30 - 10:30</span>演講 V - 陳彥宇（HCI 生醫應用）</p>
+						<p><span>10:50 - 11:50</span>演講 VI - 李佳穎（感受：顛覆感官）</p>
+						<p><span>13:00 - 14:00</span>各組準備中間提案</p>
+						<p><span>14:00 - 16:10</span>中間提案</p>
+						<p><span>16:20 - 17:50</span>評審總評</p>
+						<p><span>17:50 - 18:30</span>綜合討論</p>
+					</div>
+					<div id="day5" class="day5-time">
+						<h1><img src="img/program/day5_s.png">實作與媒材 II</h1>
+						<div class="date">2016 / 7 / 9 Saturday</div>
+						<p><span>08:30 - 09:00</span>學員報到</p>
+						<p><span>09:00 - 09:30</span>故事前情提要</p>
+						<p><span>09:30 - 10:30</span>演講 VII - 唐玄輝（HCI與社會服務）</p>
+						<p><span>10:50 - 11:50</span>演講 VIII - 宋恆（遊戲：有趣、運動、玩具）</p>
+						<p><span>13:00 - 15:00</span>設計實作</p>
+						<p><span>15:10 - 16:20</span>開放使用數位製造器材</p>
+						<p><span>16:40 - 17:00</span>討論與分享</p>
+					</div>
+					<div id="day6" class="day6-time">
+						<h1><img src="img/program/day6_s.png">發表與展覽</h1>
+						<div class="date">2016 / 7 / 10 Sunday</div>
+						<p><span>08:30 - 09:00</span>學員報到</p>
+						<p><span>09:00 - 09:30</span>各組實作時間</p>
+						<p><span>09:30 - 10:00</span>各組展場報到</p>
+						<p><span>10:00 - 12:00</span>佈置互動會場</p>
+						<p><span>13:00 - 13:10</span>互動會場開場</p>
+						<p><span>13:10 - 15:10</span>各組成果發表</p>
+						<p><span>15:10 - 17:00</span>互動成果展示</p>
+						<p><span>17:10 - 18:00</span>頒獎 & 閉幕式</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--
+		Registration
+	-->
+	<section id="registration">
+		<img src="img/registration/bg/registration_bg.png" class="registration-bg">
+		<div class="frame">
+			<div class="title wow bounceInDown">
+				<img src="img/registration/registration-title.png" class="maintitle">
+				<div class="subtitle">
+					<strong>7th</strong> student-organized workshop on human-computer interaction
+				</div>
+				<a href="">	
+					<div class="button">
+						報名系統暫未開放
+					</div>
+				</a>
+			</div>
+			<div class="content">
+				<h3>報名資訊</h3>
+				</br>
+				<div>
+					【 活動時間 】 </br>
+					2016 年 7 月 5 日 (二) 至 2015 年 7 月 10 日 (日) ，共 6 天。</br>
+					每日活動開始時間皆為 09:00，結束時間為 18:00 – 18:30 不等。 </br>
+					 </br>
+					【 報名學員資格 】 </br>
+					全國各大專院校在學學生，包含大學部及碩/博生。
+					 </br>
+					【 招生時程 】</br>
+					線上報名時間：6/11(六) 00:00 至 6/23(四) 23:59 前</br>
+					正取名單公佈：6/25(六) 網路公佈與信件通知，請自行上網查看</br>
+					遞補備取通知：6/27(一) 個別電話通知</br>
+					</br>
+					【 報名方式 】</br>
+					在報名期限內，備妥報名相關資料後，經報名連結線上報名。</br>
+					公佈與通知正/備取之學員，請於指定時間內繳交1000元保證金，並回覆系統匯款資訊以確認成功匯款，經由查證後完成報名程序。</br>
+					未依照指定報名期限內完成報名程序者，視為放棄報名資格，會依據備取順序遞補。正取者請於6/27(ㄧ) 17:00 前繳交保證金以完成報名程序。備取名單會於6/27(一) 後個別電話通知，備取者請於6/28(二) 17:00 前繳交保證金以完成報名程序。</br>
+					（本活動透過報名資料作為錄取參考依據，挑選正/備取學員並於網站公佈與通知，與報名順序時間無關。）
+				</div>
+				</br></br>
+				<h3>報名準備內容</h3>
+				</br>
+				<div>
+					進入線上報名系統前需準備兩份報名資料，包含「線上問卷」與「iDCard」兩部分：</br>
+					&nbsp;&nbsp;1.「線上問卷」為線上填寫作業，包含個人基本資料、教育背景兩部分。</br>
+					&nbsp;&nbsp;2.「iDCard」為一份兩頁之投影片，包含“個人簡歷”與“問題發想”</br>
+					PS.檔案請自行製作與編排，並存檔輸出PDF檔</br>
+					可於“問題發想”內容中附加輔助說明之素材 (手繪、電繪圖片、照片或另附影片，格式不限)</br>
+					PDF檔名標題請依格式填寫： [2016 iDCard] 校系_姓名 (範例：[2016 iDCard] 台科大工商業設計系_王曉明)</br>
+					若有其他輔助說明之素材，請將檔案放至上傳空間(ex. dropbox)後將上傳連結附於報名系統內。</br>
+					若檔名或檔案格式不符，造成漏檔，報名者請自行負責。
+				</div>	
+				</br></br>
+				<h3>iDCard內容說明</h3>
+				</br>
+				<div>
+					iDCard為線上報名之第二份需預先準備之作業檔案，並於線上報名時上傳。</br>
+					第一頁請放個人簡歷，表達格式不限。</br>
+					第二頁請從你的經驗中去發想並回答以下兩問題，可透過文字、圖片或另附影片表達，數量、格式均不限。</br>
+					</br>
+					&nbsp;&nbsp;
+					1. 請從自己與互動物（包括電腦、智慧裝置、圖形化介面、互動設計、互動藝術）認知或相處的經驗中，舉一自己最喜歡或印象深刻的例子，並說明原因。</br>
+					&nbsp;&nbsp;
+					2. 本次活動主題為超覺未來，請你想像五至十年的未來、科技會如何加強人類的能力（包含感知能力、運動能力、表達能力），並描述一例。具體描述內容包括：</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					a. 未來的人類有什麼需求或不足，因此需要加強某種能力。</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					b. 這項能力是什麼。</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					c. 可以達到什麼新的互動。</br>
+					</br>
+					iDCard範例一：<a href="https://goo.gl/tCWmWj" class="template-link">https://goo.gl/tCWmWj</a></br>
+					iDCard範例二：<a href="https://goo.gl/a0g00z" class="template-link">https://goo.gl/a0g00z</a></br>
+					iDCard範例三：<a href="https://goo.gl/xuA9QO" class="template-link">https://goo.gl/xuA9QO</a></br>
+					iDCard空白模板：<a href="https://goo.gl/8IsU8R" class="template-link">https://goo.gl/8IsU8R</a>
+				</div>
+				</br></br>
+				<h3>報名保證金須知</h3>
+				</br>
+				<div>
+					正取學員會於6/25(六) 網路公佈與信件通知，請自行上網查看， 並請在6/27(一) 17:00 前繳交1000元保證金。</br>
+					經由電話通知的備取學員，請於6/28(二) 17:00 前繳交保證金以完成報名程序，此保證金保證學員參予工作營期間內，全日數出席參與活動，並無無故缺席或其他不可避免之因素請假者，可於活動最後一天全額退予保證金。</br>
+					</br>
+					繳交保證金方式</br>
+					指定銀行與匯款帳戶如下：</br>
+					</br>
+					銀行代碼：013 (國泰世華) </br>
+					帳號：212-50-608894-9 </br>
+					戶名：李宜 </br>
+					金額：1000元</br>
+					</br>
+					匯款後請報名者提供匯款戶名與帳號後五碼</br>
+					回覆Open HCI 2016主辦人事組：human@openhci.com以確認成功匯款</br>
+					主辦單位確認報名與匯款資料後完成報名。</br>
+					</br>
+					疑問聯絡</br>
+					關於報名有任何問題，歡迎寄信給主辦單位：human@openhci.com (人事組)</br>
+					官方網站：http://www.openhci.com</br>
+					粉絲頁：https://www.facebook.com/openhci</br>
+					OpenHCI 2016，感謝您的參與 Best regards.</br>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--
+		Crew
+	-->
+
+	<section id="crew">
+		<img src="img/crew/bg/crew_bg.png" class="crew-bg">
+		<img src="img/crew/bg/six.png" class="six">
+		<div id="crewList" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="list-box">
+				<div class="item active">
+					<div class="crewtitle wow bounceInDown">
+						<img src="img/crew/crew-title.png">
+						<div class="subtitle">
+							<strong>7th</strong> student-organized workshop on human-computer interaction
+						</div>
+					</div>
+					<div class="box">
+						<h4>PROGRAM</h4>
+						<div class="person">
+							<div class="name">廖以圻</div>
+							<div class="describtion">
+								國立臺灣大學資訊管理學系</br>
+								指導教授 陳炳宇老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">何立芹</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 陳健雄老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">利淑惠</div>
+							<div class="describtion">
+								國立政治大學數位內容碩士學程</br>
+								指導教授 余能豪老師
+							</div>
+						</div>
+						<h4>HUMAN RESOURCE</h4>
+						<div class="person">
+							<div class="name">陳力維</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 陳健雄老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">張皓宇</div>
+							<div class="describtion">
+								國立臺灣大學資訊工程學系暨研究所</br>
+								指導教授 歐陽明老師
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<h4>WEB SERVICE</h4>
+						<div class="person">
+							<div class="name">侯信丞</div>
+							<div class="describtion">
+								國立臺灣大學資訊工程學系暨研究所</br>
+								指導教授 陳彥仰老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">林聿儒</div>
+							<div class="describtion">
+								國立臺北科技大學互動設計系碩士班</br>
+								指導教授 王聖銘老師
+							</div>
+						</div>
+						<h4>TECH</h4>
+						<div class="person">
+							<div class="name">鄧善元</div>
+							<div class="describtion">
+								國立臺灣大學電機工程學系</br>
+								指導教授 陳炳宇老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">張凱涵</div>
+							<div class="describtion">
+								國立臺灣大學資訊管理所</br>
+								指導教授 陳炳宇老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">李宜庭</div>
+							<div class="describtion">
+								國立政治大學廣告學系</br>
+								雙主修數位內容
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="person">
+							<div class="name" style="margin-top:40px;">孟憲奇</div>
+							<div class="describtion">
+								國立政治大學數位內容碩士學程</br>
+								指導教授 陳聖智老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">汪暐宸</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 梁容輝老師
+							</div>
+						</div>
+						<h4>LECTURE</h4>
+						<div class="person">
+							<div class="name">楊雅筑</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系</br>
+								指導教授 陳健雄老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">鄭竣丰</div>
+							<div class="describtion">
+								國立政治大學數位內容碩士學程</br>
+								指導教授 余能豪老師
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="crewtitle">
+						<img src="img/crew/crew-title.png">
+						<div class="subtitle">
+							<strong>7th</strong> student-organized workshop on human-computer interaction
+						</div>
+					</div>
+					<div class="box">
+						<h4>EXHIBITION / DEMO</h4>
+						<div class="person">
+							<div class="name">劉詩瑜</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 董芳武老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">曾群貿</div>
+							<div class="describtion">
+								實踐大學工業產品設計學系研究所</br>
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">蕭宇彤</div>
+							<div class="describtion">
+								國立政治大學資訊管理學系</br>
+								雙主修數位內容
+							</div>
+						</div>
+						<h4>PUNLICITY</h4>
+						<div class="person">
+							<div class="name">陳佳妤</div>
+							<div class="describtion">
+								國立政治大學數位內容碩士學程</br>
+								指導教授 余能豪老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">駱若瑀</div>
+							<div class="describtion">
+								國立臺灣大學資訊工程學系暨研究所</br>
+								指導教授 陳炳宇老師
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<h4>VISAUL DESIGN</h4>
+						<div class="person">
+							<div class="name">陳令佳</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 梁容輝老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">李杰庭</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 王偉堯老師
+							</div>
+						</div>
+						<h4>SPNSORSHIP</h4>
+						<div class="person">
+							<div class="name">呂詠綸</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 宋同正老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">林子方</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系所</br>
+								指導教授 陳建雄老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">陳沐萱</div>
+							<div class="describtion">
+								國立臺灣大學資訊工程學系暨研究所</br>
+								指導老師 陳炳宇老師
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="person">
+							<h4>GENERAL AFFAIR</h4>	
+							<div class="name">李 宜</div>
+							<div class="describtion">
+								國立臺灣大學心理學系</br>
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">陳舒玲</div>
+							<div class="describtion">
+								國立政治大學數位內容碩士學程</br>
+								指導教授 陳聖智老師
+							</div>
+						</div>
+						<h4>FILM CREW</h4>
+						<div class="person">
+							<div class="name">陳玠淳</div>
+							<div class="describtion">
+								國立臺灣科技大學工商業設計系</br>
+								指導教授 陳健雄老師
+							</div>
+						</div>
+						<div class="person">
+							<div class="name">邱順群</div>
+							<div class="describtion">
+								實踐大學工業設計學系研究所</br>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="crewtitle">
+						<img src="img/crew/sponsor-title.png">
+						<div class="subtitle" style="margin-left: 2px; margin-top: 10px;">
+							<strong>7th</strong> student-organized workshop on human-computer interaction
+						</div>
+					</div>
+					<h4 class="cat-name">ORGANIZER</h4>
+					<div class="organizer">國立臺灣大學</br>資訊工程學系暨研究所</div>
+					<div class="organizer">國立臺灣大學</br>資訊網路與多媒體研究所</div>
+					<div class="organizer">國立政治大學</br>資訊科學系暨數位內容碩士學程</div>
+					<div class="organizer">國立臺灣科技大學</br>工商業設計系暨研究所</div>
+					<h4 class="cat-name">CO-ORGANIZER</h4>
+					<div class="co-organizer">國立臺北科技大學</br>創新設計研究所＆互動設計研究所</div>
+					<h4 class="cat-name">SPONSOR</h4>
+					<div class="sponsor"><img src="img/crew/aja.png"></div>
+					<div class="sponsor"><img src="img/crew/gauss.png"></div>
+				</div>
+			</div>
+			<ol class="carousel-indicators">
+				<li data-target="#crewList" data-slide-to="0" class="active"></li>
+				<li data-target="#crewList" data-slide-to="1"></li>
+				<li data-target="#crewList" data-slide-to="2"></li>
+			</ol>
+		</div>		
+	</section>
+
+	<section id="contact">
+		<img src="img/contact/bg/contact_bg.png" class="contact-bg">
+		<div class="frame">
+			<img src="img/contact/contact.png" class="wow fadeIn">
+			<div class="info wow fadeInUp">
+				<div>FACEBOOK PAGE : Open HCI 人機互動工作坊</div>
+				<div>EMAIL : program@openhci.com</div>
+				<div>
+					OPEN HCI : 
+						<a href="http://www.openhci.com/2015">2015</a>
+						<a href="http://www.openhci.com/2014">2014</a>
+						<a href="http://www.openhci.com/2013">2013</a>		
+						<a href="http://www.openhci.com/2012">2012</a>
+						<a href="http://www.openhci.com/2011">2011</a>
+						<a href="http://www.openhci.com/2009">2009</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+</html>
