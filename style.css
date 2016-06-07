@@ -70,6 +70,15 @@ html {
       position: fixed; }
     html body #home {
       height: 100vh; }
+      html body #home .cone {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -607px;
+        margin-top: -72px; }
+        @media screen and (max-width: 768px) {
+          html body #home .cone {
+            display: none; } }
       html body #home .bigball {
         position: absolute;
         top: 50%;
@@ -549,6 +558,25 @@ html {
           height: initial; } }
     html body #crew {
       height: 100vh; }
+      html body #crew .crew-bg {
+        position: absolute;
+        top: 550vh;
+        left: 50%;
+        margin-top: -703px;
+        margin-left: -649px;
+        z-index: -4; }
+        @media screen and (max-width: 768px) {
+          html body #crew .crew-bg {
+            display: none; } }
+      html body #crew .six {
+        position: absolute;
+        top: 550vh;
+        left: 50%;
+        margin-top: 186px;
+        margin-left: 487px; }
+        @media screen and (max-width: 768px) {
+          html body #crew .six {
+            display: none; } }
       html body #crew #crewList {
         width: 1068px;
         margin: auto;
@@ -611,6 +639,15 @@ html {
           height: 180vh; } }
     html body #contact {
       height: 100vh; }
+      html body #contact .contact-bg {
+        position: absolute;
+        top: 650vh;
+        left: 50%;
+        margin-left: -622px;
+        margin-top: -326px; }
+        @media screen and (max-width: 768px) {
+          html body #contact .contact-bg {
+            display: none; } }
       html body #contact .frame {
         position: relative;
         z-index: 999;

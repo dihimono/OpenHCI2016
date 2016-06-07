@@ -77,6 +77,16 @@ html{
     
     #home{
       height: 100vh;
+      .cone{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -607px;
+        margin-top: -72px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .bigball{
         position: absolute;
         top: 50%;
@@ -636,6 +646,27 @@ html{
 
     #crew{
       height: 100vh;
+      .crew-bg{
+        position: absolute;
+        top: 550vh;
+        left: 50%;
+        margin-top: -703px;
+        margin-left: -649px;
+        z-index: -4;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+      .six{
+        position: absolute;
+        top: 550vh;
+        left: 50%;
+        margin-top: 186px;
+        margin-left: 487px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       #crewList{
         width: 1068px;
         margin: auto;
@@ -714,6 +745,16 @@ html{
 
     #contact{
       height: 100vh;
+      .contact-bg{
+        position: absolute;
+        top: 650vh;
+        left: 50%;
+        margin-left: -622px;
+        margin-top: -326px;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .frame{
         position: relative;
         z-index: 999;
