@@ -220,6 +220,20 @@ html{
 
     #introngoals{
       height: 100vh;
+      .intro-bg{
+        position: absolute;
+        left: 50%;
+        top: 200vh;
+        margin-left: -630px;
+        margin-top: -105px;
+      }
+      .snake{
+        position: absolute;
+        top: 250vh;
+        left: 50%;
+        margin-top: -640px;
+        margin-left: -710px;
+      }
       .frame{
         position: relative;
         z-index: 999;

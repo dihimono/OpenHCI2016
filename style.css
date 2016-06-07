@@ -195,6 +195,18 @@ html {
             padding: 100px 0 0 0; } }
     html body #introngoals {
       height: 100vh; }
+      html body #introngoals .intro-bg {
+        position: absolute;
+        left: 50%;
+        top: 200vh;
+        margin-left: -630px;
+        margin-top: -105px; }
+      html body #introngoals .snake {
+        position: absolute;
+        top: 250vh;
+        left: 50%;
+        margin-top: -640px;
+        margin-left: -710px; }
       html body #introngoals .frame {
         position: relative;
         z-index: 999;
