@@ -740,12 +740,21 @@ html{
               display: inline-block;
               margin-right: 20px;
               color: white;
+              @media screen and (max-width: 768px){
+                  margin-bottom: 10px;
+              }
             }
             .sponsor{
               display: inline-block;
               margin-right: 20px;
               width: auto;
               height: 120px;
+              img{
+                @media screen and (max-width: 768px){
+                  width: auto;
+                  height: 80px;
+                }
+              }
             }
           }
         }

@@ -638,11 +638,18 @@ html {
           display: inline-block;
           margin-right: 20px;
           color: white; }
+          @media screen and (max-width: 768px) {
+            html body #crew #crewList .carousel-inner .item .organizer, html body #crew #crewList .carousel-inner .item .co-organizer {
+              margin-bottom: 10px; } }
         html body #crew #crewList .carousel-inner .item .sponsor {
           display: inline-block;
           margin-right: 20px;
           width: auto;
           height: 120px; }
+          @media screen and (max-width: 768px) {
+            html body #crew #crewList .carousel-inner .item .sponsor img {
+              width: auto;
+              height: 80px; } }
         @media screen and (max-width: 1050px) {
           html body #crew #crewList {
             width: 90%;
