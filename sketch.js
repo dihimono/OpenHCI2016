@@ -85,9 +85,9 @@ function drawDots() {
 			curDotY[i] -= v.y;
 			ellipse(curDotX[i], curDotY[i], dotR[i], dotR[i]);
 		}
-		if(curDotX[i] <= 0 || curDotX[i] >= windowWidth || curDotY[i] <= 0)
+		if(dist(curDotX[i], curDotY[i], dotX[i], dotY[i]) < 1)
 			dotState[i] = false;
-		if(curDotX[i] == dotCoreX && curDotY[i] == dotCoreY)
+		if(dist(curDotX[i], curDotY[i], dotCoreX, dotCoreY) < 1)
 			dotState[i] = true;
 	}
 }
