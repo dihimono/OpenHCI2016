@@ -18,13 +18,13 @@ var lineEndX = [550];
 var lineEndY = [550];
 
 //horns
-var hornStartX = [];
-var hornStartY = [];
-var hornEndX = [];
-var hornEndY = [];
-var hornStartR = [];
-var hornEndR = [];
-var hornStartColor = [], hornEndColor = [];
+var hornStartX = [0];
+var hornStartY = [0];
+var hornEndX = [50];
+var hornEndY = [80];
+var hornStartR = [100];
+var hornEndR = [5];
+var hornStartColor = [236, 28, 91], hornEndColor = [0, 0, 0];
 var hornCurX = [];
 var hornCurY = [];
 var hornState = [];
@@ -59,8 +59,9 @@ function setup() {
 	//setup horns
 	hornNum = 1;
 	for(var i = 0;i < hornNum;i++) {
-		hornState[i] = false;
-		curX[i] = startX[i]
+		hornState[i] = 0;
+		hornCurX[i] = hornStartX[i];
+		hornCurY[i] = hornStartY[i];
 	}
 }
 
@@ -68,6 +69,7 @@ function drawDots() {
 	noStroke();
 	fill(dotColor[0], dotColor[1], dotColor[2]);
 	for(var i = 0;i < dotNum;i++) {
+		console.log(curDotX[i] + ", " + curDotY[i]);
 		var v = createVector(dotX[i] - dotCoreX, dotY[i] - dotCoreY);
 		v.normalize();
 		if(dotState[i] == true) {
@@ -99,20 +101,47 @@ function drawLines() {
 
 		if(lineOpa[i] == 255) lineState[i] = true;
 		if(lineOpa[i] == 127) lineState[i] = false;
-		console.log(lineOpa[i] + ", " + lineState[i]);
 	}
 }
 
 function drawHorns() {
 	noStroke();
 	for(var i = 0;i < hornNum;i++) {
+		if(dist(hornCurX[i], hornCurY[i], hornStartX[i], hornStartY[i]) < 1)
+			hornState[i] = 0;
+		if(dist(mouseX, mouseY, hornStartX, hornStartY) < hornStartR[i]) {
+			if(hornState[i] == 0) hornState[i] = 1;
+		}
+		else {
+			if(hornState[i] == 1) hornState[i] = -1;
+		}
+		if(dist(hornCurX[i], hornCurY[i], hornEndX[i], hornEndY[i]) < 1)
+			hornState[i] = -1;
+		if(hornState[i] == 0) continue;
 		var v = createVector(hornEndX[i] - hornStartX[i], hornEndY[i] - hornStartY[i]);
 		var c = createVector(hornEndColor[0] - hornStartColor[0], hornEndColor[1] - hornStartColor[1], hornEndColor[2] - hornStartColor[2]);
+		var r = createVector(hornEndR[i] - hornStartR[i], 0);
 		v.normalize();
 		c.normalize();
+		r.normalize();
 		fill(c.x, c.y, c.z);
-		
-
+		var tx = hornStartX[i], ty = hornStartY[i], tr = hornStartR[i], tc = createVector(hornStartColor[0], hornStartColor[1], hornStartColor[2]);
+		while(1) {
+			fill(tc.x, tc.y, tc.z);
+			ellipse(tx, ty, tr, tr);
+			if(abs(tx - hornCurX[i]) < 1 || abs(ty - hornCurY[i]) < 1) break;
+			tx += v.x, ty += v.y, tr += r.x, tc = p5.Vector.add(c, tc);
+		}
+		if(hornState[i] == 1) {
+			//growing outward
+			hornCurX[i] += v.x;
+			hornCurY[i] += v.y;
+		}
+		else if(hornState[i] == -1) {
+			//growing inward
+			hornCurX[i] -= v.x;
+			hornCurY[i] -= v.y;
+		}
 	}
 }
 
