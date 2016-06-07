@@ -49,9 +49,7 @@ table, tr, td {
   border-spacing: 0; }
 
 /*reset end */
-// section{
-//   border-bottom: 1px solid white;
-// }
+
 html{
   overflow-x: hidden;
   body{
@@ -59,23 +57,28 @@ html{
     color: white;
     height: 100%;
     background-color: black;
+    // background-image: url(img/bgimg.png);
+    // background-size: 107%;
+    // background-position-x:15%;
+    // background-position-y:-1%;
     nav{
-
+      position: fixed;
     }
     
     #home{
       height: 100vh;
-      // background-color: black;
-      // background-image: url(img/bgimg.png);
-      // background-size: 107%;
-      // background-position-x:15%;
-      // background-position-y:-1%;
       img{
         position: absolute;
         left: 50%;
         top: 50%;
         margin-left: -175px;
         margin-top: -230px;
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          height: auto;
+          margin-left: -170px;
+          margin-top: -200px;
+        }
       }
     }
 
@@ -93,6 +96,14 @@ html{
           .subtitle{
             margin-top: 50px;
             font-size: 12px;
+            @media screen and (max-width: 1050px){
+              float: none;
+              margin-top: 10px;
+            }
+          }
+          @media screen and (max-width: 1050px){
+            float: none;
+            width: 100%;
           }
         }
         .content{
@@ -102,6 +113,15 @@ html{
           :nth-child(1){
             font-size: 26px;
           }
+          @media screen and (max-width: 1050px){
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          padding: 100px 0 0 0;
         }
       }
     }
@@ -120,6 +140,14 @@ html{
           .subtitle{
             margin-top: 50px;
             font-size: 12px;
+            @media screen and (max-width: 1050px){
+              float: none;
+              margin-top: 10px;
+            }
+          }
+          @media screen and (max-width: 1050px){
+            float: none;
+            width: 100%;
           }
         }
         .content{
@@ -129,7 +157,19 @@ html{
           h2{
             margin-bottom: 10px;
           }
+          @media screen and (max-width: 1050px){
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+          }
         }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          padding: 100px 0 0 0;
+        }
+      }
+      @media screen and (max-width: 1050px){
+        height: initial;
       }
     }
 
@@ -149,6 +189,9 @@ html{
             font-size: 12px;
             line-height: 1.2em;
             margin-left: 20px;
+            @media screen and (max-width: 1050px){
+              margin-left: 6px;
+            }
           }
         }
         #schedule{
@@ -164,6 +207,11 @@ html{
               a{
                 display: block;
                 color: white;
+              }
+              @media screen and (max-width: 1050px){
+                margin-right: 8px;
+                display: inline-block;
+                margin-bottom: 15px;
               }
             }
             :nth-child(6){
@@ -182,8 +230,10 @@ html{
                 position: absolute;
                 margin-left: -63px;
                 margin-top: -5px;
+                @media screen and (max-width: 1050px){
+                  display: none;
+                }
               }
-
             }
             .day2{
               &:before{
@@ -198,6 +248,9 @@ html{
                 position: absolute;
                 margin-left: -63px;
                 margin-top: -5px;
+                @media screen and (max-width: 1050px){
+                  display: none;
+                }
               }
             }
             .day3{
@@ -213,6 +266,9 @@ html{
                 position: absolute;
                 margin-left: -63px;
                 margin-top: -5px;
+                @media screen and (max-width: 1050px){
+                  display: none;
+                }
               }
             }
             .day4{
@@ -228,6 +284,9 @@ html{
                 position: absolute;
                 margin-left: -63px;
                 margin-top: -5px;
+                @media screen and (max-width: 1050px){
+                  display: none;
+                }
               }
             }
             .day5{
@@ -243,6 +302,9 @@ html{
                 position: absolute;
                 margin-left: -63px;
                 margin-top: -5px;
+                @media screen and (max-width: 1050px){
+                  display: none;
+                }
               }
             }
             .day6{
@@ -258,6 +320,9 @@ html{
                 position: absolute;
                 margin-left: -63px;
                 margin-top: -5px;
+                @media screen and (max-width: 1050px){
+                  display: none;
+                }
               }
             }
                             
@@ -270,6 +335,12 @@ html{
               a{
                 font-size: 28px;
               }
+            }
+            @media screen and (max-width: 1050px){
+              float: none;
+              width: 100%;
+              border: 0;
+              padding: 0;
             }
           }
           .time-container{
@@ -297,7 +368,18 @@ html{
             .day4-time{}
             .day5-time{}
             .day6-time{}
+            @media screen and (max-width: 1050px){
+              width: 100%;
+              float: none;
+            }
           }
+          @media screen and (max-width: 1050px){
+            margin-top: 16px;
+          }
+        }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          padding: 100px 0 0 0;
         }
       }
     }
@@ -316,6 +398,10 @@ html{
           .subtitle{
             margin-top: 50px;
             font-size: 12px;
+            @media screen and (max-width: 1050px){
+              margin-top: 10px;
+              width: 100%;
+            }
           }
           .button{
             width: 120px;
@@ -332,6 +418,14 @@ html{
             font-size: 14px;
             padding-top: 26%;
             margin-top: 50px;
+            @media screen and (max-width: 1050px){
+              margin-top: 25px;
+              padding-top: 15%;
+            }
+          }
+          @media screen and (max-width: 1050px){
+            width: 100%;
+            margin-bottom: 30px;
           }
         }
         .content{
@@ -359,7 +453,28 @@ html{
           h2{
             margin-bottom: 10px;
           }
+          div .template-link{
+            text-decoration: underline;
+            color: white;
+            display: inline-block;
+            &:hover{
+              color: #ec125b;
+              transition: color 0.3s ease;
+            }
+          }
+          @media screen and (max-width: 1050px){
+            width: 95%;
+            margin: auto;
+            float: none;
+          }
         }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          padding: 100px 0 0 0;
+        }
+      }
+      @media screen and (max-width: 1050px){
+        height: initial;
       }
     }
 
@@ -390,6 +505,12 @@ html{
                 font-size: 12px;
                 line-height: 1.2em;
                 margin-left: 30%;
+                @media screen and (max-width: 1050px){
+                  float: none;
+                }
+              }
+              @media screen and (max-width: 1050px){
+                width: 100%;
               }
             }
             .box{
@@ -417,9 +538,21 @@ html{
                   line-height: 1.3em;
                 }
               }
+              @media screen and (max-width: 1050px){
+                width: 50%;
+                padding-right: 15px;
+              }
             }
           }
         }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          padding: 100px 0 0 0;
+          height: 180vh;
+        }
+      }
+      @media screen and (max-width: 1050px){
+        height: 180vh;
       }
     }
 
@@ -447,6 +580,10 @@ html{
               }
             }
           }
+        }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          padding: 100px 0 0 0;
         }  
       }
     }
