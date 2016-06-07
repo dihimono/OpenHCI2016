@@ -3,6 +3,24 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800,900);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
+@keyframes pinkPulse {
+  0% {  opacity: 0.9; box-shadow: 0 0 9px #333; }
+  50% {   opacity: 1; box-shadow: 0 0 30px #00a8a0; }
+  100% {  opacity: 0.9; box-shadow: 0 0 9px #333; }
+}
+
+// @-webkit-keyframes pinkPulse {
+//   0% {  opacity: 0.9; -webkit-box-shadow: 0 0 9px #333; }
+//   50% {   opacity: 1; -webkit-box-shadow: 0 0 30px #00a8a0; }
+//   100% {  opacity: 0.9; -webkit-box-shadow: 0 0 9px #333; }
+// }
+
+// @-moz-keyframes pinkPulse {
+//   0% {  opacity: 0.9; -moz-box-shadow: 0 0 9px #333; }
+//   50% {   opacity: 1; -moz-box-shadow: 0 0 30px #00a8a0; }
+//   100% {  opacity: 0.9; -moz-box-shadow: 0 0 9px #333; }
+// }
+
 html {
   height: 100%; }
 
@@ -11,6 +29,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%; }
+
 
 /*reset*/
 h1, h2, h3, h4, h5, p {
@@ -62,23 +81,42 @@ html{
     color: white;
     height: 100%;
     background-color: black;
-    // background-image: url(img/bgimg.png);
-    // background-size: 107%;
-    // background-position-x:15%;
-    // background-position-y:-1%;
     nav{
       position: fixed;
     }
     
     #home{
       height: 100vh;
+      .background{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(img/home/bg/home_bg.png);
+        background-size: 102%;
+        background-repeat: no-repeat;
+        background-position-y: 43%;
+        background-position-x: 33%;
+        .bigball{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -720px;
+          margin-top: -60px;
+          z-index: -1; 
+        }
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       img{
         position: absolute;
         left: 50%;
         top: 50%;
         margin-left: -175px;
         margin-top: -230px;
-        @media screen and (max-width: 1050px){
+        @media screen and (max-width: 768px){
           width: 90%;
           height: auto;
           margin-left: -170px;
@@ -89,6 +127,16 @@ html{
 
     #openhci2016{
       height: 100vh;
+      .background{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .frame{
         width: 1068px;
         margin: auto;
@@ -227,7 +275,7 @@ html{
                 display: inline-block;
                 width: 36px;
                 height: 36px;
-                background-color: 125#ecb;
+                background-color: $theme-pink;
                 border-radius: 50%;
                 content: 't';
                 font-size: 0px;
@@ -423,6 +471,9 @@ html{
             font-size: 14px;
             padding-top: 26%;
             margin-top: 50px;
+            animation-name: pinkPulse;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
             @media screen and (max-width: 1050px){
               margin-top: 25px;
               padding-top: 15%;
@@ -442,6 +493,20 @@ html{
           overflow-y: scroll;
           padding-right: 15px;
           padding-bottom: 20px;
+          
+          &::-moz-scrollbar {
+              width: 8px;
+          }
+          &::-moz-scrollbar-track {
+              background-color: black;
+          }
+          &::-moz-scrollbar-thumb {
+              background: #ec125b; /* Old browsers */
+              background: -moz-linear-gradient(left, #ec125b 0%, $theme-green 100%); /* FF3.6-15 */
+              background: -webkit-linear-gradient(left, #ec125b 0%,$theme-green 100%); /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to bottom, #ec125b 0%,$theme-green 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 );
+          }
           &::-webkit-scrollbar {
               width: 8px;
           }
