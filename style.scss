@@ -9,6 +9,15 @@
   100% {  opacity: 0.9; box-shadow: 0 0 9px #333; }
 }
 
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 html {
   height: 100%; }
 
@@ -359,6 +368,7 @@ html{
             float: left;
             border-left: 1px solid white;
             padding-left: 45px;
+            margin-left: 30px;
             li{
               margin-bottom: 43px;
               a{
@@ -504,6 +514,7 @@ html{
               width: 100%;
               border: 0;
               padding: 0;
+              margin-left: 0px;
             }
           }
           .time-container{
@@ -689,6 +700,8 @@ html{
         left: 50%;
         margin-top: 186px;
         margin-left: 487px;
+        animation: roll 3s infinite;
+        transform: rotate(30deg);
         @media screen and (max-width: 768px){
           display: none;
         }

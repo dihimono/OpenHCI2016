@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.carousel').carousel({
-      interval: false
+      interval: 3000
     })
 
     $('.nav li a').click(function () {
