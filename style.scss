@@ -75,6 +75,28 @@ html{
     
     #home{
       height: 100vh;
+      #mute{
+        position: absolute;
+        left: 20px;
+        top: 70px;
+        background-image: url(img/mute.png);
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        opacity: 0.7;
+        z-index: 10;
+        &:hover{
+          opacity: 1;
+          transition: opacity 0.2s linear;
+        }
+        &:active{
+          top: 71px;
+        }
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
       .cone{
         position: absolute;
         top: 50%;

@@ -70,6 +70,25 @@ html {
       position: fixed; }
     html body #home {
       height: 100vh; }
+      html body #home #mute {
+        position: absolute;
+        left: 20px;
+        top: 70px;
+        background-image: url(img/mute.png);
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        opacity: 0.7;
+        z-index: 10; }
+        html body #home #mute:hover {
+          opacity: 1;
+          transition: opacity 0.2s linear; }
+        html body #home #mute:active {
+          top: 71px; }
+        @media screen and (max-width: 768px) {
+          html body #home #mute {
+            display: none; } }
       html body #home .cone {
         position: absolute;
         top: 50%;
