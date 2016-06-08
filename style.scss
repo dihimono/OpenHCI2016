@@ -85,7 +85,7 @@ html{
     #home{
       height: 100vh;
       #mute{
-        position: absolute;
+        position: fixed;
         left: 20px;
         top: 70px;
         background-image: url(img/mute.png);
