@@ -65,7 +65,8 @@ table, tr, td {
 /*variables */
 /*variables end*/
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  box-sizing: border-box; }
   html body {
     width: 100%;
     color: white;
@@ -611,12 +612,13 @@ html {
         @media screen and (max-width: 768px) {
           html body #crew .six {
             display: none; } }
-      html body #crew #crewList {
+      html body #crew .frame {
+        position: relative;
+        z-index: 999;
         width: 1068px;
         margin: auto;
-        padding: 8% 4% 0 2%;
-        height: 750px; }
-        html body #crew #crewList .carousel-inner .item .crewtitle {
+        padding: 10% 4% 0 2%; }
+        html body #crew .frame .crewtitle {
           width: 40%;
           height: 125px;
           background: -moz-linear-gradient(left, #ff0066 0%, #00a8a0 100%);
@@ -627,21 +629,31 @@ html {
           /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='$theme-green',GradientType=1 );
           padding-top: 10px;
-          padding-left: 1px; }
-          html body #crew #crewList .carousel-inner .item .crewtitle img {
+          padding-left: 1px;
+          position: relative; }
+          html body #crew .frame .crewtitle img {
             float: left; }
-          html body #crew #crewList .carousel-inner .item .crewtitle .subtitle {
+          html body #crew .frame .crewtitle .subtitle {
             float: left;
             width: 180px;
             font-size: 12px;
             line-height: 1.2em;
             margin-left: 30%; }
             @media screen and (max-width: 1050px) {
-              html body #crew #crewList .carousel-inner .item .crewtitle .subtitle {
+              html body #crew .frame .crewtitle .subtitle {
                 float: none; } }
           @media screen and (max-width: 1050px) {
-            html body #crew #crewList .carousel-inner .item .crewtitle {
+            html body #crew .frame .crewtitle {
               width: 100%; } }
+        @media screen and (max-width: 1050px) {
+          html body #crew .frame {
+            width: 90%;
+            margin: auto; } }
+      html body #crew #crewList {
+        width: 1068px;
+        margin: auto;
+        padding: 2% 2% 0 2%;
+        height: 600px; }
         html body #crew #crewList .carousel-inner .item .box {
           width: calc(100%/3);
           float: left;
@@ -688,8 +700,7 @@ html {
         @media screen and (max-width: 1050px) {
           html body #crew #crewList {
             width: 90%;
-            padding: 100px 0 0 0;
-            height: 180vh; } }
+            height: 1000px; } }
       @media screen and (max-width: 1050px) {
         html body #crew {
           height: 180vh; } }
@@ -700,7 +711,8 @@ html {
         top: 650vh;
         left: 50%;
         margin-left: -622px;
-        margin-top: -326px; }
+        margin-top: -326px;
+        z-index: -1; }
         @media screen and (max-width: 768px) {
           html body #contact .contact-bg {
             display: none; } }
@@ -727,6 +739,48 @@ html {
             margin-top: 20px; }
         @media screen and (max-width: 1050px) {
           html body #contact .frame {
+            width: 90%;
+            padding: 100px 0 0 0; } }
+    html body #sponsor {
+      padding-top: 120px;
+      padding-bottom: 120px; }
+      html body #sponsor .frame {
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 0 2% 0 2%; }
+        html body #sponsor .frame h3 {
+          text-align: center;
+          margin-top: 70px; }
+        html body #sponsor .frame .organizer {
+          display: inline-block;
+          margin-right: 40px;
+          margin-top: 40px; }
+          html body #sponsor .frame .organizer img {
+            height: 70px; }
+          html body #sponsor .frame .organizer .name {
+            margin-top: 10px; }
+        html body #sponsor .frame .co-organizer {
+          width: 100%; }
+          html body #sponsor .frame .co-organizer img {
+            display: inline-block;
+            width: 250px;
+            margin-right: 40px;
+            margin-top: 40px; }
+          html body #sponsor .frame .co-organizer .name {
+            margin-top: 15px; }
+        html body #sponsor .frame .sponsor {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 40px;
+          margin-top: 40px; }
+          html body #sponsor .frame .sponsor img {
+            height: 90px; }
+          html body #sponsor .frame .sponsor .name {
+            margin-top: 10px; }
+        @media screen and (max-width: 1050px) {
+          html body #sponsor .frame {
             width: 90%;
             padding: 100px 0 0 0; } }
     @media screen and (max-width: 769px) {

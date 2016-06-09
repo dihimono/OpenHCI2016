@@ -73,6 +73,7 @@ $theme-green: #00a8a0;
 
 html{
   overflow-x: hidden;
+  box-sizing: border-box;
   body{
     width: 100%;
     color: white;
@@ -706,39 +707,51 @@ html{
           display: none;
         }
       }
+      .frame{
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%;
+        .crewtitle{
+          width: 40%;
+          height: 125px;
+          background: -moz-linear-gradient(left, #ff0066 0%, $theme-green 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, #ff0066 0%,$theme-green 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, #ff0066 0%,$theme-green 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='$theme-green',GradientType=1 );
+          padding-top: 10px;
+          padding-left: 1px;
+          position: relative;
+          img{
+            float: left;
+          }
+          .subtitle{
+            float: left;
+            width: 180px;
+            font-size: 12px;
+            line-height: 1.2em;
+            margin-left: 30%;
+            @media screen and (max-width: 1050px){
+              float: none;
+            }
+          }
+          @media screen and (max-width: 1050px){
+            width: 100%;
+          }
+        }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          margin: auto;
+        } 
+      }
       #crewList{
         width: 1068px;
         margin: auto;
-        padding: 8% 4% 0 2%;
-        height: 750px;
+        padding: 2% 2% 0 2%;
+        height: 600px;
         .carousel-inner{
           .item{
-            .crewtitle{
-              width: 40%;
-              height: 125px;
-              background: -moz-linear-gradient(left, #ff0066 0%, $theme-green 100%); /* FF3.6-15 */
-              background: -webkit-linear-gradient(left, #ff0066 0%,$theme-green 100%); /* Chrome10-25,Safari5.1-6 */
-              background: linear-gradient(to right, #ff0066 0%,$theme-green 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='$theme-green',GradientType=1 );
-              padding-top: 10px;
-              padding-left: 1px;
-              img{
-                float: left;
-              }
-              .subtitle{
-                float: left;
-                width: 180px;
-                font-size: 12px;
-                line-height: 1.2em;
-                margin-left: 30%;
-                @media screen and (max-width: 1050px){
-                  float: none;
-                }
-              }
-              @media screen and (max-width: 1050px){
-                width: 100%;
-              }
-            }
             .box{
               width: calc(100%/3);
               float: left;
@@ -799,8 +812,7 @@ html{
         }
         @media screen and (max-width: 1050px){
           width: 90%;
-          padding: 100px 0 0 0;
-          height: 180vh;
+          height: 1000px;
         }
       }
       @media screen and (max-width: 1050px){
@@ -816,6 +828,7 @@ html{
         left: 50%;
         margin-left: -622px;
         margin-top: -326px;
+        z-index: -1;
         @media screen and (max-width: 768px){
           display: none;
         }
@@ -852,6 +865,61 @@ html{
           width: 90%;
           padding: 100px 0 0 0;
         }  
+      }
+    }
+
+    #sponsor{
+      padding-top: 120px;
+      padding-bottom: 120px;
+      .frame{
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 0 2% 0 2%;
+        h3{
+          text-align: center;
+          margin-top: 70px;
+        }
+        .organizer{
+          display: inline-block;
+          margin-right: 40px;
+          margin-top: 40px;
+          img{
+            height: 70px;
+          }
+          .name{
+            margin-top: 10px;
+          }
+        }
+        .co-organizer{
+          width: 100%;
+          img{
+            display: inline-block;
+            width: 250px;
+            margin-right: 40px;
+            margin-top: 40px;
+          }
+          .name{
+            margin-top: 15px;
+          }
+        }
+        .sponsor{
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 40px;
+          margin-top: 40px;
+          img{
+            height: 90px;
+          }
+          .name{
+            margin-top: 10px;
+          }
+        }
+        @media screen and (max-width: 1050px){
+          width: 90%;
+          padding: 100px 0 0 0;
+        }
       }
     }
     @media screen and (max-width: 769px){
