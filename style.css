@@ -74,6 +74,16 @@ html {
     background-color: black; }
     html body nav {
       position: fixed; }
+    html body #animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -50vh;
+      margin-left: -50vw;
+      z-index: 998; }
+      @media screen and (max-width: 768px) {
+        html body #animation {
+          display: none; } }
     html body #home {
       height: 100vh; }
       html body #home #mute {
@@ -137,7 +147,7 @@ html {
             height: auto;
             margin-left: -131px;
             margin-top: -155px; } }
-      @media screen and (max-width: 768) {
+      @media screen and (max-width: 768px) {
         html body #home {
           height: 667px; } }
     html body #openhci2016 {
@@ -226,7 +236,7 @@ html {
           html body #openhci2016 .frame {
             width: 90%;
             padding: 100px 0 0 0; } }
-      @media screen and (max-width: 768) {
+      @media screen and (max-width: 768px) {
         html body #openhci2016 {
           height: 667px; } }
     html body #introngoals {
@@ -475,7 +485,7 @@ html {
           html body #program .frame {
             width: 90%;
             padding: 100px 0 0 0; } }
-      @media screen and (max-width: 768) {
+      @media screen and (max-width: 768px) {
         html body #program {
           height: 750px; } }
     html body #registration {

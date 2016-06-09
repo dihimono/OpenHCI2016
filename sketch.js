@@ -21,7 +21,7 @@ var lineEndY = [550];
 var hornStartX = [167.200, 272.200, 446.830, 557.220, 818.176, 1081.748, 1318.066, 1256.545, 1128.922, 1035.606, 329.600];
 var hornStartY = [679.370, 495.420, 479.560, 728.060, 749.952, 688.333, 633.185, 544.137, 479.694, 435.106, 667.670];
 var hornEndX = [122.220, 258.112, 385.890, 472.880, 850.860, 1182.633, 1363.045, 1303.466, 1181.802, 1081.215, 258.112];
-var hornEndY = [494.450, 532.703, 391.220, 551.240, 614.850, 560.026, 568.268, 475.797, 395.584, 333.988, 532.703];
+var hornEndY = [494.450, 434.09, 391.220, 551.240, 614.850, 560.026, 568.268, 475.797, 395.584, 333.988, 532.703];
 var hornStartR = [52.610, 30.235, 30.233, 83.622, 83.622, 83.622, 52.609, 40.011, 33.477, 32.393, 83.621];
 var hornEndR = [6.374, 10.132, 5.523, 10.131, 10.132, 10.132, 6.374, 6.911, 6.910, 10.316, 10.316];
 var hornStartColor = [236, 18, 91], hornEndColor = [0, 168, 160];
@@ -37,7 +37,7 @@ function setup() {
 
 	//setup canvas
 	canvas = createCanvas(windowWidth, windowHeight);
-	canvas.parent("home");
+	canvas.parent("animation");
 
 	//setup dots
 	dotCoreX = windowWidth / 2;
@@ -59,7 +59,7 @@ function setup() {
 	//setup horns
 	hornNum = 11;
 	for(var i = 0;i < hornNum;i++) {
-		hornState[i] = 0;
+		hornState[i] = 1;
 		hornStartX[i] -= (1440 - windowWidth) / 2;
 		hornEndX[i] -= (1440 - windowWidth) / 2;
 		hornCurX[i] = hornStartX[i];
@@ -109,13 +109,13 @@ function drawHorns() {
 	noStroke();
 	for(var i = 0;i < hornNum;i++) {
 		if(dist(hornCurX[i], hornCurY[i], hornStartX[i], hornStartY[i]) < 1)
-			hornState[i] = 0;
-		if(dist(mouseX, mouseY, hornStartX[i], hornStartY[i]) < hornStartR[i]) {
-			if(hornState[i] != 1)hornState[i] = 1;
-		}
-		else {
-			if(hornState[i] == 1) hornState[i] = -1;
-		}
+			hornState[i] = 1;
+		//if(dist(mouseX, mouseY, hornStartX[i], hornStartY[i]) < hornStartR[i]) {
+		//	if(hornState[i] != 1)hornState[i] = 1;
+		//}
+		//else {
+		//	if(hornState[i] == 1) hornState[i] = -1;
+		//}
 		if(dist(hornCurX[i], hornCurY[i], hornEndX[i], hornEndY[i]) < 1)
 			hornState[i] = -1;
 		if(hornState[i] == 0) continue;
