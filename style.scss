@@ -698,7 +698,6 @@ html{
     }
 
     #crew{
-      height: 100vh;
       .crew-bg{
         position: absolute;
         top: 550vh;
@@ -764,7 +763,7 @@ html{
         width: 1068px;
         margin: auto;
         padding: 2% 2% 0 2%;
-        height: 600px;
+        height: 555px;
         .carousel-inner{
           .item{
             .box{
@@ -811,18 +810,6 @@ html{
                   margin-bottom: 10px;
               }
             }
-            .sponsor{
-              display: inline-block;
-              margin-right: 20px;
-              img{
-                width: auto;
-                height: 120px;
-                @media screen and (max-width: 768px){
-                  width: auto;
-                  height: 80px;
-                }
-              }
-            }
           }
         }
         @media screen and (max-width: 1050px){
@@ -843,44 +830,34 @@ html{
         z-index: 999;
         width: 1068px;
         margin: auto;
-        padding: 0 2% 0 2%;
-        h3{
-          text-align: center;
-          margin-top: 70px;
-        }
+        padding: 0;
         .organizer{
-          display: inline-block;
-          margin-right: 40px;
-          margin-top: 40px;
-          img{
-            height: 70px;
+          .first{
+            &:before{
+              content: 'ORGANIZER';
+              font-family: 'Work Sans';
+              font-weight: 600;
+            }
           }
-          .name{
-            margin-top: 10px;
-          }
-        }
-        .co-organizer{
-          width: 100%;
           img{
             display: inline-block;
-            width: 250px;
-            margin-right: 40px;
-            margin-top: 40px;
+            margin-top: 55px;
+            margin-left: 13px;
           }
-          .name{
-            margin-top: 15px;
-          }
+          
         }
         .sponsor{
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 40px;
-          margin-top: 40px;
-          img{
-            height: 90px;
+          .first{
+            &:before{
+              content: 'ORGANIZER';
+              font-family: 'Work Sans';
+              font-weight: 600;
+            }
           }
-          .name{
-            margin-top: 10px;
+          img{
+            display: inline-block;
+            margin-top: 55px;
+            margin-left: 13px;
           }
         }
         @media screen and (max-width: 1050px){
@@ -888,7 +865,7 @@ html{
           padding: 100px 0 0 0;
         }
       }
-      @media screen abd (max-width: 768px;){
+      @media screen and (max-width: 768px){
         height: initial;
       }
     }

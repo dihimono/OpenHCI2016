@@ -1,62 +1,787 @@
-/*
-Error: Invalid CSS after "...dia screen abd ": expected "{", was "(max-width: 768..."
-        on line 891 of style.scss
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800,900);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@keyframes pinkPulse {
+  0% {
+    opacity: 0.9;
+    box-shadow: 0 0 9px #333; }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 30px #00a8a0; }
+  100% {
+    opacity: 0.9;
+    box-shadow: 0 0 9px #333; } }
+@keyframes roll {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+html {
+  height: 100%; }
 
-886:         @media screen and (max-width: 1050px){
-887:           width: 90%;
-888:           padding: 100px 0 0 0;
-889:         }
-890:       }
-891:       @media screen abd (max-width: 768px;){
-892:         height: initial;
-893:       }
-894:     }
-895: 
-896:     #contact{
+body {
+  font: 16px/20px 'open sans',sans-serif, 'Noto Sans TC',"微軟正黑體" !important;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
 
-Backtrace:
-style.scss:891
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:400:in `media_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:218:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:193:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...dia screen abd \": expected \"{\", was \"(max-width: 768...\"\A         on line 891 of style.scss\A \A 886:         @media screen and (max-width: 1050px){\A 887:           width: 90%;\A 888:           padding: 100px 0 0 0;\A 889:         }\A 890:       }\A 891:       @media screen abd (max-width: 768px;){\A 892:         height: initial;\A 893:       }\A 894:     }\A 895: \A 896:     #contact{"; }
+/*reset*/
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0; }
+
+br {
+  display: block;
+  margin: 0 0 5px; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body > img {
+  display: none; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+a, a:active, a:visited, a:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: none;
+  display: block;
+  -webkit-tap-highlight-color: transparent; }
+
+table, tr, td {
+  padding: 0;
+  border-spacing: 0; }
+
+/*reset end */
+/*variables */
+/*variables end*/
+html {
+  overflow-x: hidden;
+  box-sizing: border-box; }
+  html body {
+    width: 100%;
+    color: white;
+    height: 100%;
+    background-color: black; }
+    html body nav {
+      position: fixed; }
+    html body #animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -50vh;
+      margin-left: -50vw;
+      z-index: 998; }
+      @media screen and (max-width: 768px) {
+        html body #animation {
+          display: none; } }
+    html body #home {
+      height: 100vh; }
+      html body #home #mute {
+        position: fixed;
+        left: 20px;
+        top: 70px;
+        background-image: url(img/mute.png);
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        opacity: 0.7;
+        z-index: 10; }
+        html body #home #mute:hover {
+          opacity: 1;
+          transition: opacity 0.2s linear; }
+        html body #home #mute:active {
+          top: 71px; }
+        @media screen and (max-width: 768px) {
+          html body #home #mute {
+            display: none; } }
+      html body #home .cone {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -607px;
+        margin-top: -72px;
+        z-index: 1; }
+        @media screen and (max-width: 768px) {
+          html body #home .cone {
+            display: none; } }
+      html body #home .home-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -735px;
+        margin-top: -297px; }
+        @media screen and (max-width: 768px) {
+          html body #home .home-bg {
+            display: none; } }
+      html body #home .line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -418px;
+        margin-top: -15px;
+        z-index: 2; }
+        @media screen and (max-width: 768px) {
+          html body #home .line {
+            display: none; } }
+      html body #home .home-title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -175px;
+        margin-top: -230px;
+        z-index: 999; }
+        @media screen and (max-width: 768px) {
+          html body #home .home-title {
+            width: 262px;
+            height: auto;
+            margin-left: -131px;
+            margin-top: -155px; } }
+      @media screen and (max-width: 768px) {
+        html body #home {
+          height: 667px; } }
+    html body #openhci2016 {
+      height: 100vh; }
+      html body #openhci2016 .biggreen {
+        position: absolute;
+        top: 150vh;
+        left: 50%;
+        width: 642px;
+        height: 610px;
+        background-color: #00a39b;
+        border-radius: 50%;
+        z-index: -3;
+        margin-left: -250px;
+        margin-top: -270px; }
+        @media screen and (max-width: 768px) {
+          html body #openhci2016 .biggreen {
+            display: none; } }
+      html body #openhci2016 .background {
+        width: 1440px;
+        height: 100vh;
+        position: absolute;
+        left: 50%;
+        top: 100vh;
+        margin-left: -720px;
+        background-image: url(img/open/bg/open_bg.png);
+        background-size: cover;
+        z-index: 0; }
+        html body #openhci2016 .background .sun {
+          width: 59px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: 510px;
+          margin-top: -210px; }
+        html body #openhci2016 .background .eye {
+          width: 55px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: 512px;
+          margin-top: -310px; }
+        html body #openhci2016 .background .slash {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 12px;
+          margin-left: -620px;
+          margin-top: 170px; }
+        @media screen and (max-width: 768px) {
+          html body #openhci2016 .background {
+            display: none; } }
+      html body #openhci2016 .frame {
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%; }
+        html body #openhci2016 .frame .title {
+          width: 20%;
+          float: left;
+          line-height: 14px; }
+          html body #openhci2016 .frame .title .subtitle {
+            margin-top: 50px;
+            font-size: 12px; }
+            @media screen and (max-width: 1050px) {
+              html body #openhci2016 .frame .title .subtitle {
+                float: none;
+                margin-top: 10px; } }
+          @media screen and (max-width: 1050px) {
+            html body #openhci2016 .frame .title {
+              float: none;
+              width: 100%; } }
+        html body #openhci2016 .frame .content {
+          width: 70%;
+          float: right;
+          line-height: 1.5em; }
+          html body #openhci2016 .frame .content :nth-child(1) {
+            font-size: 26px; }
+          @media screen and (max-width: 1050px) {
+            html body #openhci2016 .frame .content {
+              float: none;
+              width: 100%;
+              margin-top: 20px; } }
+        @media screen and (max-width: 1050px) {
+          html body #openhci2016 .frame {
+            width: 90%;
+            padding: 100px 0 0 0; } }
+      @media screen and (max-width: 768px) {
+        html body #openhci2016 {
+          height: 667px; } }
+    html body #introngoals {
+      height: 100vh; }
+      html body #introngoals .intro-bg {
+        position: absolute;
+        left: 50%;
+        top: 200vh;
+        margin-left: -630px;
+        margin-top: -105px; }
+        @media screen and (max-width: 768px) {
+          html body #introngoals .intro-bg {
+            display: none; } }
+      html body #introngoals .snake {
+        position: absolute;
+        top: 250vh;
+        left: 50%;
+        margin-top: -640px;
+        margin-left: -710px; }
+        @media screen and (max-width: 768px) {
+          html body #introngoals .snake {
+            display: none; } }
+      html body #introngoals .frame {
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%; }
+        html body #introngoals .frame .title {
+          width: 20%;
+          float: left;
+          line-height: 14px; }
+          html body #introngoals .frame .title .subtitle {
+            margin-top: 50px;
+            font-size: 12px; }
+            @media screen and (max-width: 1050px) {
+              html body #introngoals .frame .title .subtitle {
+                float: none;
+                margin-top: 10px; } }
+          @media screen and (max-width: 1050px) {
+            html body #introngoals .frame .title {
+              float: none;
+              width: 100%; } }
+        html body #introngoals .frame .content {
+          width: 70%;
+          float: right;
+          line-height: 1.5em; }
+          html body #introngoals .frame .content h2 {
+            margin-bottom: 10px; }
+          @media screen and (max-width: 1050px) {
+            html body #introngoals .frame .content {
+              float: none;
+              width: 100%;
+              margin-top: 20px; } }
+        @media screen and (max-width: 1050px) {
+          html body #introngoals .frame {
+            width: 90%;
+            padding: 100px 0 0 0; } }
+      @media screen and (max-width: 1050px) {
+        html body #introngoals {
+          height: initial; } }
+    html body #program {
+      height: 100vh; }
+      html body #program .program-bg {
+        position: absolute;
+        top: 350vh;
+        left: 50%;
+        margin-top: -352px;
+        margin-left: -736px; }
+        @media screen and (max-width: 768px) {
+          html body #program .program-bg {
+            display: none; } }
+      html body #program .frame {
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 10% 2% 0 2%; }
+        html body #program .frame .title .main-title {
+          display: inline-block; }
+        html body #program .frame .title .subtitle {
+          width: 180px;
+          display: inline-block;
+          font-size: 12px;
+          line-height: 1.2em;
+          margin-left: 20px; }
+          @media screen and (max-width: 1050px) {
+            html body #program .frame .title .subtitle {
+              margin-left: 6px; } }
+        html body #program .frame #schedule {
+          margin-top: 50px; }
+          html body #program .frame #schedule .days {
+            display: block;
+            width: 160px;
+            float: left;
+            border-left: 1px solid white;
+            padding-left: 45px;
+            margin-left: 30px; }
+            html body #program .frame #schedule .days li {
+              margin-bottom: 43px; }
+              html body #program .frame #schedule .days li a {
+                display: block;
+                color: white; }
+              @media screen and (max-width: 1050px) {
+                html body #program .frame #schedule .days li {
+                  margin-right: 8px;
+                  display: inline-block;
+                  margin-bottom: 15px; } }
+            html body #program .frame #schedule .days :nth-child(6) {
+              margin-bottom: 0px; }
+            html body #program .frame #schedule .days .day1:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #ec125b;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #ec125b;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px;
+              cursor: pointer; }
+              @media screen and (max-width: 1050px) {
+                html body #program .frame #schedule .days .day1:before {
+                  display: none; } }
+            html body #program .frame #schedule .days .day2:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #c52a66;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #c52a66;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px;
+              cursor: pointer; }
+              @media screen and (max-width: 1050px) {
+                html body #program .frame #schedule .days .day2:before {
+                  display: none; } }
+            html body #program .frame #schedule .days .day3:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #9d4270;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #9d4270;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px;
+              cursor: pointer; }
+              @media screen and (max-width: 1050px) {
+                html body #program .frame #schedule .days .day3:before {
+                  display: none; } }
+            html body #program .frame #schedule .days .day4:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #765a7b;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #765a7b;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px;
+              cursor: pointer; }
+              @media screen and (max-width: 1050px) {
+                html body #program .frame #schedule .days .day4:before {
+                  display: none; } }
+            html body #program .frame #schedule .days .day5:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #4f7386;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #4f7386;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px;
+              cursor: pointer; }
+              @media screen and (max-width: 1050px) {
+                html body #program .frame #schedule .days .day5:before {
+                  display: none; } }
+            html body #program .frame #schedule .days .day6:before {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              background-color: #00a39b;
+              border-radius: 50%;
+              content: 't';
+              font-size: 0px;
+              color: #00a39b;
+              position: absolute;
+              margin-left: -63px;
+              margin-top: -5px;
+              cursor: pointer; }
+              @media screen and (max-width: 1050px) {
+                html body #program .frame #schedule .days .day6:before {
+                  display: none; } }
+            html body #program .frame #schedule .days li.active {
+              background: #ec125b;
+              /* Old browsers */
+              background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+              /* FF3.6-15 */
+              background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+              /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
+              /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 ); }
+              html body #program .frame #schedule .days li.active a {
+                font-size: 28px; }
+            @media screen and (max-width: 1050px) {
+              html body #program .frame #schedule .days {
+                float: none;
+                width: 100%;
+                border: 0;
+                padding: 0;
+                margin-left: 0px; } }
+          html body #program .frame #schedule .time-container {
+            width: 75%;
+            float: right; }
+            html body #program .frame #schedule .time-container .day1-time h1 img, html body #program .frame #schedule .time-container .day2-time h1 img, html body #program .frame #schedule .time-container .day3-time h1 img, html body #program .frame #schedule .time-container .day4-time h1 img, html body #program .frame #schedule .time-container .day5-time h1 img, html body #program .frame #schedule .time-container .day6-time h1 img {
+              margin-right: 10px; }
+            html body #program .frame #schedule .time-container .day1-time .date, html body #program .frame #schedule .time-container .day2-time .date, html body #program .frame #schedule .time-container .day3-time .date, html body #program .frame #schedule .time-container .day4-time .date, html body #program .frame #schedule .time-container .day5-time .date, html body #program .frame #schedule .time-container .day6-time .date {
+              font-size: 22px;
+              margin-bottom: 30px; }
+            html body #program .frame #schedule .time-container .day1-time p, html body #program .frame #schedule .time-container .day2-time p, html body #program .frame #schedule .time-container .day3-time p, html body #program .frame #schedule .time-container .day4-time p, html body #program .frame #schedule .time-container .day5-time p, html body #program .frame #schedule .time-container .day6-time p {
+              margin-bottom: 15px; }
+              html body #program .frame #schedule .time-container .day1-time p span, html body #program .frame #schedule .time-container .day2-time p span, html body #program .frame #schedule .time-container .day3-time p span, html body #program .frame #schedule .time-container .day4-time p span, html body #program .frame #schedule .time-container .day5-time p span, html body #program .frame #schedule .time-container .day6-time p span {
+                margin-right: 15px; }
+            @media screen and (max-width: 1050px) {
+              html body #program .frame #schedule .time-container {
+                width: 100%;
+                float: none; } }
+          @media screen and (max-width: 1050px) {
+            html body #program .frame #schedule {
+              margin-top: 16px; } }
+        @media screen and (max-width: 1050px) {
+          html body #program .frame {
+            width: 90%;
+            padding: 100px 0 0 0; } }
+      @media screen and (max-width: 768px) {
+        html body #program {
+          height: 750px; } }
+    html body #registration {
+      height: 100vh; }
+      html body #registration .registration-bg {
+        position: absolute;
+        top: 450vh;
+        left: 50%;
+        margin-top: -331px;
+        margin-left: -685px; }
+        @media screen and (max-width: 768px) {
+          html body #registration .registration-bg {
+            display: none; } }
+      html body #registration .frame {
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 10% 4% 0 2%; }
+        html body #registration .frame .title {
+          width: 20%;
+          float: left;
+          line-height: 14px; }
+          html body #registration .frame .title .subtitle {
+            margin-top: 50px;
+            font-size: 12px; }
+            @media screen and (max-width: 1050px) {
+              html body #registration .frame .title .subtitle {
+                margin-top: 10px;
+                width: 100%; } }
+          html body #registration .frame .title .button {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 50%;
+            color: white;
+            background: #ec125b;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 );
+            text-align: center;
+            font-size: 14px;
+            padding-top: 26%;
+            margin-top: 50px;
+            animation-name: pinkPulse;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; }
+            @media screen and (max-width: 1050px) {
+              html body #registration .frame .title .button {
+                margin-top: 25px;
+                padding-top: 15%; } }
+          @media screen and (max-width: 1050px) {
+            html body #registration .frame .title {
+              width: 100%;
+              margin-bottom: 30px; } }
+        html body #registration .frame .content {
+          width: 70%;
+          float: right;
+          line-height: 2em;
+          height: 70vh;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          padding-right: 15px;
+          padding-bottom: 20px;
+          letter-spacing: 1px; }
+          html body #registration .frame .content::-moz-scrollbar {
+            width: 8px; }
+          html body #registration .frame .content::-moz-scrollbar-track {
+            background-color: black; }
+          html body #registration .frame .content::-moz-scrollbar-thumb {
+            background: #ec125b;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ec125b 0%, #00a8a0 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 ); }
+          html body #registration .frame .content::-webkit-scrollbar {
+            width: 8px; }
+          html body #registration .frame .content::-webkit-scrollbar-track {
+            background-color: black; }
+          html body #registration .frame .content::-webkit-scrollbar-thumb {
+            background: #ec125b;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ec125b 0%, #00a8a0 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 ); }
+          html body #registration .frame .content h2 {
+            margin-bottom: 10px; }
+          html body #registration .frame .content div .template-link {
+            text-decoration: underline;
+            color: white;
+            display: inline-block; }
+            html body #registration .frame .content div .template-link:hover {
+              color: #ec125b;
+              transition: color 0.3s ease; }
+          @media screen and (max-width: 1050px) {
+            html body #registration .frame .content {
+              width: 95%;
+              margin: auto;
+              float: none; } }
+        @media screen and (max-width: 1050px) {
+          html body #registration .frame {
+            width: 90%;
+            padding: 100px 0 0 0; } }
+      @media screen and (max-width: 1050px) {
+        html body #registration {
+          height: initial; } }
+    html body #crew .crew-bg {
+      position: absolute;
+      top: 550vh;
+      left: 50%;
+      margin-top: -703px;
+      margin-left: -649px;
+      z-index: -4; }
+      @media screen and (max-width: 768px) {
+        html body #crew .crew-bg {
+          display: none; } }
+    html body #crew .six {
+      position: absolute;
+      top: 550vh;
+      left: 50%;
+      margin-top: 186px;
+      margin-left: 487px;
+      animation: roll 3s infinite;
+      transform: rotate(30deg); }
+      @media screen and (max-width: 768px) {
+        html body #crew .six {
+          display: none; } }
+    html body #crew .frame {
+      position: relative;
+      z-index: 999;
+      width: 1068px;
+      margin: auto;
+      padding: 10% 4% 0 2%; }
+      html body #crew .frame .crewtitle {
+        width: 40%;
+        height: 125px;
+        background: -moz-linear-gradient(left, #ff0066 0%, #00a8a0 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #ff0066 0%, #00a8a0 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #ff0066 0%, #00a8a0 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='$theme-green',GradientType=1 );
+        padding-top: 10px;
+        padding-left: 1px;
+        position: relative; }
+        html body #crew .frame .crewtitle img {
+          float: left; }
+        html body #crew .frame .crewtitle .subtitle {
+          float: left;
+          width: 180px;
+          font-size: 12px;
+          line-height: 1.2em;
+          margin-left: 30%; }
+          @media screen and (max-width: 1050px) {
+            html body #crew .frame .crewtitle .subtitle {
+              float: none; } }
+        @media screen and (max-width: 1050px) {
+          html body #crew .frame .crewtitle {
+            width: 100%; } }
+      @media screen and (max-width: 1050px) {
+        html body #crew .frame {
+          width: 90%;
+          margin: auto; } }
+    html body #crew #crewList {
+      width: 1068px;
+      margin: auto;
+      padding: 2% 2% 0 2%;
+      height: 555px; }
+      html body #crew #crewList .carousel-inner .item .box {
+        width: calc(100%/3);
+        float: left;
+        padding-right: 50px; }
+        html body #crew #crewList .carousel-inner .item .box h4 {
+          margin: 40px 0 20px 0;
+          font-family: 'Work Sans';
+          font-weight: 600; }
+        html body #crew #crewList .carousel-inner .item .box .person:hover .name {
+          color: #10c6b9;
+          transition: color 0.3s ease; }
+        html body #crew #crewList .carousel-inner .item .box .person .name {
+          margin: 10px 0 3px 0; }
+        html body #crew #crewList .carousel-inner .item .box .person .describtion {
+          font-size: 12px;
+          font-weight: lighter;
+          line-height: 1.3em; }
+        @media screen and (max-width: 1050px) {
+          html body #crew #crewList .carousel-inner .item .box {
+            width: 50%;
+            padding-right: 15px; } }
+      html body #crew #crewList .carousel-inner .item .cat-name {
+        margin: 40px 0 20px 0;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        color: white; }
+      html body #crew #crewList .carousel-inner .item .organizer, html body #crew #crewList .carousel-inner .item .co-organizer {
+        display: inline-block;
+        margin-right: 20px;
+        color: white; }
+        @media screen and (max-width: 768px) {
+          html body #crew #crewList .carousel-inner .item .organizer, html body #crew #crewList .carousel-inner .item .co-organizer {
+            margin-bottom: 10px; } }
+      @media screen and (max-width: 1050px) {
+        html body #crew #crewList {
+          width: 90%;
+          height: 1000px; } }
+    @media screen and (max-width: 1050px) {
+      html body #crew {
+        height: 1200px;
+        margin-top: 80px; } }
+    html body #sponsor {
+      width: 100%;
+      height: 218px; }
+      html body #sponsor .frame {
+        position: relative;
+        z-index: 999;
+        width: 1068px;
+        margin: auto;
+        padding: 0; }
+        html body #sponsor .frame .organizer .first:before {
+          content: 'ORGANIZER';
+          font-family: 'Work Sans';
+          font-weight: 600; }
+        html body #sponsor .frame .organizer img {
+          display: inline-block;
+          margin-top: 55px;
+          margin-left: 13px; }
+        html body #sponsor .frame .sponsor .first:before {
+          content: 'ORGANIZER';
+          font-family: 'Work Sans';
+          font-weight: 600; }
+        html body #sponsor .frame .sponsor img {
+          display: inline-block;
+          margin-top: 55px;
+          margin-left: 13px; }
+        @media screen and (max-width: 1050px) {
+          html body #sponsor .frame {
+            width: 90%;
+            padding: 100px 0 0 0; } }
+      @media screen and (max-width: 768px) {
+        html body #sponsor {
+          height: initial; } }
+    html body #contact {
+      height: 100vh; }
+      html body #contact .contact-bg {
+        position: absolute;
+        top: 650vh;
+        left: 50%;
+        margin-left: -622px;
+        margin-top: -326px;
+        z-index: -1; }
+        @media screen and (max-width: 768px) {
+          html body #contact .contact-bg {
+            display: none; } }
+      html body #contact .frame {
+        position: relative;
+        z-index: 999;
+        width: 1064px;
+        padding: 10% 3% 0 3%;
+        margin: auto;
+        text-align: center; }
+        html body #contact .frame img {
+          position: relative;
+          margin: auto; }
+        html body #contact .frame .info {
+          font-family: 'PT Sans', sans-serif;
+          font-weight: 700;
+          margin-top: 50px; }
+          html body #contact .frame .info div a {
+            display: inline-block;
+            color: white; }
+            html body #contact .frame .info div a:hover {
+              color: #ec125b; }
+          html body #contact .frame .info .copyright {
+            margin-top: 20px; }
+        @media screen and (max-width: 1050px) {
+          html body #contact .frame {
+            width: 90%;
+            padding: 100px 0 0 0; } }
+    @media screen and (max-width: 769px) {
+      html body {
+        background-image: url(img/rwd_bg.png);
+        background-size: cover;
+        background-position-y: -3%; } }
+
+/*# sourceMappingURL=style.css.map */
