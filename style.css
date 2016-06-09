@@ -474,6 +474,96 @@ html {
               margin-bottom: 15px; }
               html body #program .frame #schedule .time-container .day1-time p span, html body #program .frame #schedule .time-container .day2-time p span, html body #program .frame #schedule .time-container .day3-time p span, html body #program .frame #schedule .time-container .day4-time p span, html body #program .frame #schedule .time-container .day5-time p span, html body #program .frame #schedule .time-container .day6-time p span {
                 margin-right: 15px; }
+            html body #program .frame #schedule .time-container .day2-time .ttable {
+              width: 60%;
+              float: left; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day2-time .ttable {
+                  float: none;
+                  width: initial; } }
+            html body #program .frame #schedule .time-container .day2-time .speaker {
+              width: 40%;
+              float: left;
+              font-size: 12px;
+              font-weight: lighter;
+              text-align: center; }
+              html body #program .frame #schedule .time-container .day2-time .speaker img {
+                margin-bottom: 4px; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day2-time .speaker {
+                  display: none; } }
+            html body #program .frame #schedule .time-container .day3-time .ttable {
+              width: 60%;
+              float: left; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day3-time .ttable {
+                  float: none;
+                  width: initial; } }
+            html body #program .frame #schedule .time-container .day3-time .speaker {
+              width: 40%;
+              float: left;
+              font-size: 12px;
+              font-weight: lighter;
+              text-align: center; }
+              html body #program .frame #schedule .time-container .day3-time .speaker img {
+                margin-bottom: 4px; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day3-time .speaker {
+                  display: none; } }
+            html body #program .frame #schedule .time-container .day4-time .ttable {
+              width: 60%;
+              float: left; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day4-time .ttable {
+                  float: none;
+                  width: initial; } }
+            html body #program .frame #schedule .time-container .day4-time .speaker {
+              width: 40%;
+              float: left;
+              font-size: 12px;
+              font-weight: lighter;
+              text-align: center; }
+              html body #program .frame #schedule .time-container .day4-time .speaker img {
+                margin-bottom: 4px; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day4-time .speaker {
+                  display: none; } }
+            html body #program .frame #schedule .time-container .day5-time .ttable {
+              width: 60%;
+              float: left; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day5-time .ttable {
+                  float: none;
+                  width: initial; } }
+            html body #program .frame #schedule .time-container .day5-time .speaker {
+              width: 40%;
+              float: left;
+              font-size: 12px;
+              font-weight: lighter;
+              text-align: center; }
+              html body #program .frame #schedule .time-container .day5-time .speaker img {
+                margin-bottom: 4px; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day5-time .speaker {
+                  display: none; } }
+            html body #program .frame #schedule .time-container .day6-time .ttable {
+              width: 60%;
+              float: left; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day6-time .ttable {
+                  float: none;
+                  width: initial; } }
+            html body #program .frame #schedule .time-container .day6-time .speaker {
+              width: 40%;
+              float: left;
+              font-size: 12px;
+              font-weight: lighter;
+              text-align: center; }
+              html body #program .frame #schedule .time-container .day6-time .speaker img {
+                margin-bottom: 4px; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day6-time .speaker {
+                  display: none; } }
             @media screen and (max-width: 1050px) {
               html body #program .frame #schedule .time-container {
                 width: 100%;
@@ -718,21 +808,27 @@ html {
         width: 1068px;
         margin: auto;
         padding: 0; }
-        html body #sponsor .frame .organizer .first:before {
-          content: 'ORGANIZER';
+        html body #sponsor .frame .organizer .title {
+          color: white;
           font-family: 'Work Sans';
-          font-weight: 600; }
+          font-weight: lighter;
+          font-size: 14px;
+          margin-top: 55px;
+          margin-left: 10px; }
         html body #sponsor .frame .organizer img {
           display: inline-block;
-          margin-top: 55px;
+          margin-top: 10px;
           margin-left: 13px; }
-        html body #sponsor .frame .sponsor .first:before {
-          content: 'ORGANIZER';
+        html body #sponsor .frame .sponsor .title {
+          color: white;
           font-family: 'Work Sans';
-          font-weight: 600; }
+          font-weight: lighter;
+          font-size: 14px;
+          margin-top: 55px;
+          margin-left: 10px; }
         html body #sponsor .frame .sponsor img {
           display: inline-block;
-          margin-top: 55px;
+          margin-top: 10px;
           margin-left: 13px; }
         @media screen and (max-width: 1050px) {
           html body #sponsor .frame {

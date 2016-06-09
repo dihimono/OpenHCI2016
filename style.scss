@@ -550,11 +550,121 @@ html{
                 }
               }
             }
-            .day2-time{}
-            .day3-time{}
-            .day4-time{}
-            .day5-time{}
-            .day6-time{}
+            .day2-time{
+              .ttable{
+                width: 60%;
+                float: left;
+                @media screen and (max-width: 768px) {
+                  float: none;
+                  width: initial;
+                }
+              }
+              .speaker{
+                width: 40%;
+                float: left;
+                font-size: 12px;
+                font-weight: lighter;
+                text-align: center;
+                img{
+                  margin-bottom: 4px;
+                }
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+            }
+            .day3-time{
+              .ttable{
+                width: 60%;
+                float: left;
+                @media screen and (max-width: 768px) {
+                  float: none;
+                  width: initial;
+                }
+              }
+              .speaker{
+                width: 40%;
+                float: left;
+                font-size: 12px;
+                font-weight: lighter;
+                text-align: center;
+                img{
+                  margin-bottom: 4px;
+                }
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+            }
+            .day4-time{
+              .ttable{
+                width: 60%;
+                float: left;
+                @media screen and (max-width: 768px) {
+                  float: none;
+                  width: initial;
+                }
+              }
+              .speaker{
+                width: 40%;
+                float: left;
+                font-size: 12px;
+                font-weight: lighter;
+                text-align: center;
+                img{
+                  margin-bottom: 4px;
+                }
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+            }
+            .day5-time{
+              .ttable{
+                width: 60%;
+                float: left;
+                @media screen and (max-width: 768px) {
+                  float: none;
+                  width: initial;
+                }
+              }
+              .speaker{
+                width: 40%;
+                float: left;
+                font-size: 12px;
+                font-weight: lighter;
+                text-align: center;
+                img{
+                  margin-bottom: 4px;
+                }
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+            }
+            .day6-time{
+              .ttable{
+                width: 60%;
+                float: left;
+                @media screen and (max-width: 768px) {
+                  float: none;
+                  width: initial;
+                }
+              }
+              .speaker{
+                width: 40%;
+                float: left;
+                font-size: 12px;
+                font-weight: lighter;
+                text-align: center;
+                img{
+                  margin-bottom: 4px;
+                }
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+            }
             @media screen and (max-width: 1050px){
               width: 100%;
               float: none;
@@ -832,31 +942,32 @@ html{
         margin: auto;
         padding: 0;
         .organizer{
-          .first{
-            &:before{
-              content: 'ORGANIZER';
-              font-family: 'Work Sans';
-              font-weight: 600;
-            }
+          .title{
+            color: white;
+            font-family: 'Work Sans';
+            font-weight: lighter;
+            font-size: 14px;
+            margin-top: 55px;
+            margin-left: 10px;
           }
           img{
             display: inline-block;
-            margin-top: 55px;
+            margin-top: 10px;
             margin-left: 13px;
           }
-          
         }
         .sponsor{
-          .first{
-            &:before{
-              content: 'ORGANIZER';
-              font-family: 'Work Sans';
-              font-weight: 600;
-            }
+          .title{
+            color: white;
+            font-family: 'Work Sans';
+            font-weight: lighter;
+            font-size: 14px;
+            margin-top: 55px;
+            margin-left: 10px;
           }
           img{
             display: inline-block;
-            margin-top: 55px;
+            margin-top: 10px;
             margin-left: 13px;
           }
         }
