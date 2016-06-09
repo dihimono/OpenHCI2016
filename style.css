@@ -471,9 +471,15 @@ html {
               font-size: 22px;
               margin-bottom: 30px; }
             html body #program .frame #schedule .time-container .day1-time p, html body #program .frame #schedule .time-container .day2-time p, html body #program .frame #schedule .time-container .day3-time p, html body #program .frame #schedule .time-container .day4-time p, html body #program .frame #schedule .time-container .day5-time p, html body #program .frame #schedule .time-container .day6-time p {
+              display: block;
+              width: 70%;
+              float: left;
               margin-bottom: 15px; }
               html body #program .frame #schedule .time-container .day1-time p span, html body #program .frame #schedule .time-container .day2-time p span, html body #program .frame #schedule .time-container .day3-time p span, html body #program .frame #schedule .time-container .day4-time p span, html body #program .frame #schedule .time-container .day5-time p span, html body #program .frame #schedule .time-container .day6-time p span {
                 margin-right: 15px; }
+            html body #program .frame #schedule .time-container .day1-time .speaker, html body #program .frame #schedule .time-container .day2-time .speaker, html body #program .frame #schedule .time-container .day3-time .speaker, html body #program .frame #schedule .time-container .day4-time .speaker, html body #program .frame #schedule .time-container .day5-time .speaker, html body #program .frame #schedule .time-container .day6-time .speaker {
+              float: left;
+              width: 30%; }
             @media screen and (max-width: 1050px) {
               html body #program .frame #schedule .time-container {
                 width: 100%;

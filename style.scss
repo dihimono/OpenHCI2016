@@ -544,10 +544,17 @@ html{
                 margin-bottom: 30px;
               }
               p{
+                display: block;
+                width: 70%;
+                float: left;
                 margin-bottom: 15px;
                 span{
                   margin-right: 15px;
                 }
+              }
+              .speaker{
+                float: left;
+                width: 30%;
               }
             }
             .day2-time{}
