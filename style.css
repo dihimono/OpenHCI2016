@@ -712,7 +712,8 @@ html {
             height: 1000px; } }
       @media screen and (max-width: 1050px) {
         html body #crew {
-          height: 1200px; } }
+          height: 1200px;
+          margin-top: 80px; } }
     html body #contact {
       height: 100vh; }
       html body #contact .contact-bg {
