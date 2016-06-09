@@ -141,6 +141,9 @@ html {
             height: auto;
             margin-left: -131px;
             margin-top: -155px; } }
+      @media screen and (max-width: 768) {
+        html body #home {
+          height: 667px; } }
     html body #openhci2016 {
       height: 100vh; }
       html body #openhci2016 .biggreen {
@@ -227,6 +230,9 @@ html {
           html body #openhci2016 .frame {
             width: 90%;
             padding: 100px 0 0 0; } }
+      @media screen and (max-width: 768) {
+        html body #openhci2016 {
+          height: 667px; } }
     html body #introngoals {
       height: 100vh; }
       html body #introngoals .intro-bg {
@@ -473,6 +479,9 @@ html {
           html body #program .frame {
             width: 90%;
             padding: 100px 0 0 0; } }
+      @media screen and (max-width: 768) {
+        html body #program {
+          height: 750px; } }
     html body #registration {
       height: 100vh; }
       html body #registration .registration-bg {
@@ -703,7 +712,7 @@ html {
             height: 1000px; } }
       @media screen and (max-width: 1050px) {
         html body #crew {
-          height: 180vh; } }
+          height: 1200px; } }
     html body #contact {
       height: 100vh; }
       html body #contact .contact-bg {

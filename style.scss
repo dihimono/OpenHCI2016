@@ -157,6 +157,9 @@ html{
           margin-top: -155px;
         }
       }
+      @media screen and (max-width: 768){
+        height: 667px;
+      }
     }
 
     #openhci2016{
@@ -255,6 +258,9 @@ html{
           width: 90%;
           padding: 100px 0 0 0;
         }
+      }
+      @media screen and (max-width: 768){
+        height: 667px;
       }
     }
 
@@ -557,6 +563,9 @@ html{
           padding: 100px 0 0 0;
         }
       }
+      @media screen and (max-width: 768){
+        height: 750px;
+      }
     }
 
     #registration{
@@ -816,7 +825,7 @@ html{
         }
       }
       @media screen and (max-width: 1050px){
-        height: 180vh;
+        height: 1200px;
       }
     }
 
