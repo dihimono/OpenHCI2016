@@ -100,43 +100,39 @@ html {
         top: 50%;
         left: 50%;
         margin-left: -607px;
-        margin-top: -72px; }
+        margin-top: -72px;
+        z-index: 1; }
         @media screen and (max-width: 768px) {
           html body #home .cone {
             display: none; } }
-      html body #home .bigball {
+      html body #home .home-bg {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-left: -720px;
-        margin-top: -60px;
-        z-index: -1; }
+        margin-left: -735px;
+        margin-top: -297px; }
         @media screen and (max-width: 768px) {
-          html body #home .bigball {
+          html body #home .home-bg {
             display: none; } }
-      html body #home .background {
-        width: 1440px;
-        height: 100vh;
+      html body #home .line {
         position: absolute;
+        top: 50%;
         left: 50%;
-        top: 0;
-        margin-left: -720px;
-        background-image: url(img/home/bg/home_bg.png);
-        background-size: 102%;
-        background-repeat: no-repeat;
-        background-position-y: 43%;
-        background-position-x: 33%; }
+        margin-left: -418px;
+        margin-top: -15px;
+        z-index: 2; }
         @media screen and (max-width: 768px) {
-          html body #home .background {
+          html body #home .line {
             display: none; } }
-      html body #home img {
+      html body #home .home-title {
         position: absolute;
         left: 50%;
         top: 50%;
         margin-left: -175px;
-        margin-top: -230px; }
+        margin-top: -230px;
+        z-index: 999; }
         @media screen and (max-width: 768px) {
-          html body #home img {
+          html body #home .home-title {
             width: 262px;
             height: auto;
             margin-left: -131px;
@@ -543,12 +539,13 @@ html {
         html body #registration .frame .content {
           width: 70%;
           float: right;
-          line-height: 1.5em;
+          line-height: 2em;
           height: 70vh;
           overflow-x: hidden;
           overflow-y: scroll;
           padding-right: 15px;
-          padding-bottom: 20px; }
+          padding-bottom: 20px;
+          letter-spacing: 1px; }
           html body #registration .frame .content::-moz-scrollbar {
             width: 8px; }
           html body #registration .frame .content::-moz-scrollbar-track {
