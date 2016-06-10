@@ -948,6 +948,26 @@ html{
         width: 1068px;
         margin: auto;
         padding: 0;
+        .green{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: 564px;
+          margin-top: -83px;
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+        }
+        .left-bg{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -633px;
+          margin-top: -77px;
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+        }
         .organizer{
           .title{
             color: white;
@@ -975,6 +995,9 @@ html{
           img{
             display: inline-block;
             margin-top: 10px;
+            margin-left: 37px;
+          }
+          :nth-child(2){
             margin-left: 13px;
           }
         }
@@ -996,6 +1019,7 @@ html{
         left: 50%;
         margin-left: -622px;
         margin-top: -40px;
+        margin-top: 30px;
         z-index: -1;
         @media screen and (max-width: 768px){
           display: none;
