@@ -940,7 +940,7 @@ html {
             html body #contact .frame .info div a:hover {
               color: #ec125b; }
           html body #contact .frame .info .copyright {
-            margin-top: 20px; }
+            margin-top: 25px; }
         @media screen and (max-width: 1050px) {
           html body #contact .frame {
             width: 90%;
