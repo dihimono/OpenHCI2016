@@ -17,6 +17,44 @@
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg); }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg); }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0); } }
+@keyframes floating {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(1%); }
+  100% {
+    transform: translateY(0%); } }
 html {
   height: 100%; }
 
@@ -773,15 +811,20 @@ html {
           margin: 40px 0 20px 0;
           font-family: 'Work Sans';
           font-weight: 600; }
-        html body #crew #crewList .carousel-inner .item .box .person:hover .name {
-          color: #10c6b9;
-          transition: color 0.3s ease; }
         html body #crew #crewList .carousel-inner .item .box .person .name {
-          margin: 10px 0 3px 0; }
+          margin: 10px 0 3px 0;
+          transform: translateZ(0); }
         html body #crew #crewList .carousel-inner .item .box .person .describtion {
           font-size: 12px;
           font-weight: lighter;
           line-height: 1.3em; }
+        html body #crew #crewList .carousel-inner .item .box .person:hover .name {
+          color: #10c6b9;
+          transition: color 0.3s ease;
+          animation-name: hvr-buzz-out;
+          animation-duration: 0.75s;
+          animation-timing-function: linear;
+          animation-iteration-count: 1; }
         @media screen and (max-width: 1050px) {
           html body #crew #crewList .carousel-inner .item .box {
             width: 50%;

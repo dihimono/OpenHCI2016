@@ -7,10 +7,6 @@ $(document).ready(function(){
       $('.nav li').removeClass('active');
       $(this).parent().addClass('active');
     })
-
-    $('#person').mouseover(function () {
-      $(this).addClass('pulse');
-    })
 });
 
 $(function(){
