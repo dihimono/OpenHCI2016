@@ -221,14 +221,21 @@ html{
         margin-top: -230px;
         z-index: 999;
         @media screen and (max-width: 768px){
-          width: 262px;
-          height: auto;
-          margin-left: -131px;
-          margin-top: -155px;
+          display: none;
+        }
+      }
+      .mobile-home-title{
+        display: none;
+        @media screen and (max-width: 768px){
+          position: relative;
+          display: block;
+          margin: auto;
+          margin-top: 100px;
+          width: 60%;
         }
       }
       @media screen and (max-width: 768px){
-        height: 667px;
+        height: 100vh;
       }
     }
 
@@ -309,6 +316,7 @@ html{
           @media screen and (max-width: 1050px){
             float: none;
             width: 100%;
+            margin-bottom: 50px;
           }
         }
         .content{
@@ -325,18 +333,17 @@ html{
           }
         }
         @media screen and (max-width: 1050px){
-          width: 90%;
-          padding: 100px 0 0 0;
+          width: 80%;
+          padding: 0 0 0 0;
         }
       }
       @media screen and (max-width: 768px){
-        height: 667px;
+        height: initial;
       }
     }
 
     #introngoals{
       height: 100vh;
-
       .intro-bg{
         position: absolute;
         left: 50%;
@@ -379,6 +386,7 @@ html{
           @media screen and (max-width: 1050px){
             float: none;
             width: 100%;
+            margin-bottom: 50px;
           }
         }
         .content{
@@ -395,7 +403,7 @@ html{
           }
         }
         @media screen and (max-width: 1050px){
-          width: 90%;
+          width: 80%;
           padding: 100px 0 0 0;
         }
       }
@@ -438,6 +446,9 @@ html{
             @media screen and (max-width: 1050px){
               margin-left: 6px;
             }
+          }
+          @media screen and (max-width: 768px){
+            margin-bottom: 50px;
           }
         }
         #schedule{
@@ -757,7 +768,7 @@ html{
           }
         }
         @media screen and (max-width: 1050px){
-          width: 90%;
+          width: 80%;
           padding: 100px 0 0 0;
         }
       }
@@ -820,7 +831,7 @@ html{
             animation-iteration-count: infinite;
             @media screen and (max-width: 1050px){
               margin-top: 25px;
-              padding-top: 15%;
+              padding-top: 9%;
             }
           }
           @media screen and (max-width: 1050px){
@@ -883,7 +894,7 @@ html{
           }
         }
         @media screen and (max-width: 1050px){
-          width: 90%;
+          width: 80%;
           padding: 100px 0 0 0;
         }
       }
@@ -1083,10 +1094,15 @@ html{
           :nth-child(2){
             margin-left: 13px;
           }
+          @media screen and (max-width: 768px){
+            :nth-child(4){
+              margin-left: 4px;
+            }
+          }
         }
         @media screen and (max-width: 1050px){
-          width: 90%;
-          padding: 100px 0 0 0;
+          width: 80%;
+          padding: 0 0 0 0;
         }
       }
       @media screen and (max-width: 768px){
@@ -1134,6 +1150,7 @@ html{
           }
           .copyright{
             margin-top: 25px;
+            margin-bottom: 40px;
           }
         }
         @media screen and (max-width: 1050px){
@@ -1141,13 +1158,16 @@ html{
           padding: 100px 0 0 0;
         }  
       }
+      @media screen and (max-width: 768px){
+        height: initial;
+      }
     }
 
 
-    @media screen and (max-width: 769px){
+    @media screen and (max-width: 768px){
       background-image: url(img/rwd_bg.png);
       background-size: cover;
-      background-position-y: -3%;
+      background-position-y: -1%;
     }
   }
 }
