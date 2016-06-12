@@ -534,6 +534,8 @@ html {
             html body #program .frame #schedule .time-container .day3-time .ttable {
               width: 60%;
               float: left; }
+              html body #program .frame #schedule .time-container .day3-time .ttable .theme {
+                padding-left: 107px; }
               @media screen and (max-width: 768px) {
                 html body #program .frame #schedule .time-container .day3-time .ttable {
                   float: none;
@@ -544,7 +546,7 @@ html {
               font-size: 12px;
               font-weight: lighter;
               text-align: center;
-              margin-top: -70px; }
+              margin-top: -35px; }
               html body #program .frame #schedule .time-container .day3-time .speaker img {
                 margin-bottom: 4px; }
               @media screen and (max-width: 768px) {
@@ -553,6 +555,8 @@ html {
             html body #program .frame #schedule .time-container .day4-time .ttable {
               width: 60%;
               float: left; }
+              html body #program .frame #schedule .time-container .day4-time .ttable .theme {
+                padding-left: 107px; }
               @media screen and (max-width: 768px) {
                 html body #program .frame #schedule .time-container .day4-time .ttable {
                   float: none;
@@ -562,8 +566,7 @@ html {
               float: left;
               font-size: 12px;
               font-weight: lighter;
-              text-align: center;
-              margin-top: -33px; }
+              text-align: center; }
               html body #program .frame #schedule .time-container .day4-time .speaker img {
                 margin-bottom: 4px; }
               @media screen and (max-width: 768px) {

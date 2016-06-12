@@ -645,6 +645,9 @@ html{
               .ttable{
                 width: 60%;
                 float: left;
+                .theme{
+                  padding-left: 107px;
+                }
                 @media screen and (max-width: 768px) {
                   float: none;
                   width: initial;
@@ -656,7 +659,7 @@ html{
                 font-size: 12px;
                 font-weight: lighter;
                 text-align: center;
-                margin-top: -70px;
+                margin-top: -35px;
                 img{
                   margin-bottom: 4px;
                 }
@@ -669,6 +672,9 @@ html{
               .ttable{
                 width: 60%;
                 float: left;
+                .theme{
+                  padding-left: 107px;
+                }
                 @media screen and (max-width: 768px) {
                   float: none;
                   width: initial;
@@ -680,7 +686,6 @@ html{
                 font-size: 12px;
                 font-weight: lighter;
                 text-align: center;
-                margin-top: -33px;
                 img{
                   margin-bottom: 4px;
                 }
@@ -693,6 +698,9 @@ html{
               .ttable{
                 width: 60%;
                 float: left;
+                .theme{
+
+                }
                 @media screen and (max-width: 768px) {
                   float: none;
                   width: initial;
@@ -717,6 +725,9 @@ html{
               .ttable{
                 width: 60%;
                 float: left;
+                .theme{
+
+                }
                 @media screen and (max-width: 768px) {
                   float: none;
                   width: initial;
