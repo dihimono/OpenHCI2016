@@ -50,11 +50,14 @@
     transform: translateX(-1px) rotate(0); } }
 @keyframes floating {
   0% {
+    box-shadow: 0 0 30px #00a8a0;
     transform: translateY(0%); }
   50% {
-    transform: translateY(1%); }
+    transform: translateY(3%);
+    box-shadow: 0 0 20px #00a8a0; }
   100% {
-    transform: translateY(0%); } }
+    transform: translateY(0%);
+    box-shadow: 0 0 30px #00a8a0; } }
 html {
   height: 100%; }
 
@@ -667,26 +670,30 @@ html {
             height: 120px;
             margin: auto;
             border-radius: 50%;
-            color: white;
-            background: #ec125b;
+            background: white;
             /* Old browsers */
-            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 );
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-pink', endColorstr='$theme-green',GradientType=1 );
             text-align: center;
-            font-size: 24px;
-            line-height: 1.5em;
-            letter-spacing: 5px;
             padding-top: 25px;
-            padding-left: 2px;
             margin-top: 50px;
-            animation-name: pinkPulse;
-            animation-duration: 2s;
+            animation-name: floating;
+            animation-duration: 1.5s;
             animation-iteration-count: infinite; }
+            html body #registration .frame .title .button span {
+              background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+              /* FF3.6-15 */
+              background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+              /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
+              /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              width: 80px;
+              display: block;
+              margin: auto;
+              font-size: 30px;
+              line-height: 1.2em;
+              font-weight: 500; }
             @media screen and (max-width: 1050px) {
               html body #registration .frame .title .button {
                 margin-top: 25px;
