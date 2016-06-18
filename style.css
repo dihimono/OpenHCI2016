@@ -58,6 +58,13 @@
   100% {
     transform: translateY(0%);
     box-shadow: 0 0 30px #00a8a0; } }
+@keyframes jump {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(20%); }
+  100% {
+    transform: translateY(0%); } }
 html {
   height: 100%; }
 
@@ -648,6 +655,16 @@ html {
         @media screen and (max-width: 768px) {
           html body #registration .registration-bg {
             display: none; } }
+      html body #registration .spring {
+        position: absolute;
+        top: 450vh;
+        left: 50%;
+        margin-top: -278px;
+        margin-left: -633px;
+        animation: jump 0.8s infinite; }
+        @media screen and (max-width: 768px) {
+          html body #registration .spring {
+            display: none; } }
       html body #registration .frame {
         position: relative;
         z-index: 999;
@@ -670,12 +687,12 @@ html {
             height: 120px;
             margin: auto;
             border-radius: 50%;
+            margin-top: 50px;
             background: white;
             /* Old browsers */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-pink', endColorstr='$theme-green',GradientType=1 );
             text-align: center;
             padding-top: 25px;
-            margin-top: 50px;
             animation-name: floating;
             animation-duration: 1.5s;
             animation-iteration-count: infinite; }
