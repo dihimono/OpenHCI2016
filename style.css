@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800,900);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Duru+Sans);
 @keyframes pinkPulse {
   0% {
     opacity: 0.9;
@@ -718,59 +719,83 @@ html {
           @media screen and (max-width: 1050px) {
             html body #registration .frame .title {
               width: 100%;
-              margin-bottom: 30px; } }
+              margin-bottom: 30px;
+              float: none; } }
         html body #registration .frame .content {
+          position: relative;
           width: 70%;
           float: right;
           line-height: 2em;
-          height: 70vh;
-          overflow-x: hidden;
-          overflow-y: scroll;
-          padding-right: 15px;
-          padding-bottom: 20px;
+          overflow: hidden;
           letter-spacing: 1px; }
-          html body #registration .frame .content::-moz-scrollbar {
-            width: 8px; }
-          html body #registration .frame .content::-moz-scrollbar-track {
-            background-color: black; }
-          html body #registration .frame .content::-moz-scrollbar-thumb {
-            background: #ec125b;
-            /* Old browsers */
-            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, #ec125b 0%, #00a8a0 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 ); }
-          html body #registration .frame .content::-webkit-scrollbar {
-            width: 8px; }
-          html body #registration .frame .content::-webkit-scrollbar-track {
-            background-color: black; }
-          html body #registration .frame .content::-webkit-scrollbar-thumb {
-            background: #ec125b;
-            /* Old browsers */
-            background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, #ec125b 0%, #00a8a0 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec125b', endColorstr='$theme-green',GradientType=1 ); }
-          html body #registration .frame .content h2 {
-            margin-bottom: 10px; }
-          html body #registration .frame .content div .template-link {
-            text-decoration: underline;
-            color: white;
-            display: inline-block; }
-            html body #registration .frame .content div .template-link:hover {
-              color: #ec125b;
-              transition: color 0.3s ease; }
-          @media screen and (max-width: 1050px) {
-            html body #registration .frame .content {
-              width: 95%;
+          html body #registration .frame .content .box {
+            position: relative;
+            display: inline-block;
+            width: calc(70%/3);
+            text-align: center; }
+            html body #registration .frame .content .box .step {
+              position: relative;
+              font-size: 12px;
+              margin-bottom: 20px; }
+            html body #registration .frame .content .box .number {
+              position: relative;
+              font-size: 52px;
+              font-family: 'Duru Sans', sans-serif;
+              margin-bottom: 25px;
+              line-height: 1em; }
+              @media screen and (max-width: 1050px) {
+                html body #registration .frame .content .box .number {
+                  font-size: 40px; } }
+            html body #registration .frame .content .box button {
+              position: relative;
+              background: none;
+              border: none;
+              margin-bottom: 40px; }
+              html body #registration .frame .content .box button:focus {
+                outline: none; }
+              @media screen and (max-width: 1050px) {
+                html body #registration .frame .content .box button {
+                  margin-bottom: 20px; } }
+            html body #registration .frame .content .box .step-title {
+              writing-mode: vertical-lr;
               margin: auto;
-              float: none; } }
+              letter-spacing: 4px;
+              font-size: 20px; }
+              html body #registration .frame .content .box .step-title span {
+                writing-mode: initial; }
+                @media screen and (max-width: 1050px) {
+                  html body #registration .frame .content .box .step-title span {
+                    font-size: 15px;
+                    letter-spacing: 2px; } }
+          html body #registration .frame .content .modal .modal-dialog {
+            color: black;
+            margin-top: 9%; }
+            html body #registration .frame .content .modal .modal-dialog .modal-content .modal-body .info {
+              width: 100%;
+              max-height: 520px;
+              overflow: auto;
+              height: 70vh; }
+            @media screen and (max-width: 1050px) {
+              html body #registration .frame .content .modal .modal-dialog {
+                margin-top: 21%; } }
+          @media screen and (min-width: 768px) and (max-width: 1050px) {
+            html body #registration .frame .content {
+              float: none;
+              width: 100%; }
+              html body #registration .frame .content .box button img {
+                height: 100px; } }
+          @media screen and (max-width: 768px) {
+            html body #registration .frame .content {
+              float: none;
+              width: 100%; }
+              html body #registration .frame .content :first-child button img {
+                width: 40%; }
+              html body #registration .frame .content :nth-child(2) button img {
+                width: 70%; }
+              html body #registration .frame .content :nth-child(3) button img {
+                width: 90%; }
+              html body #registration .frame .content :nth-child(4) button img {
+                width: 80%; } }
         @media screen and (max-width: 1050px) {
           html body #registration .frame {
             width: 80%;
@@ -990,6 +1015,8 @@ html {
       @media screen and (max-width: 768px) {
         html body #contact {
           height: initial; } }
+    html body .modal-backdrop {
+      z-index: 998; }
     @media screen and (max-width: 768px) {
       html body {
         background-image: url(img/rwd_bg.png);
