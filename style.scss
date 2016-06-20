@@ -83,6 +83,18 @@
   }     
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(3%);
+  } 
+  100% {
+    transform: translateY(0%); 
+  }     
+}
+
 @keyframes jump{
   0%{transform: translateY(0%);}
   50%{transform: translateY(20%);}
@@ -631,6 +643,21 @@ html{
                   margin-right: 15px;
                 }
               }
+              .speaker{
+                .speaker-img{
+                  margin-bottom: 4px;
+                }
+                .live{
+                  width: 35px;
+                  position: absolute;
+                  margin-left: 35px;
+                  margin-top: -18px;
+                  animation: float 1s infinite;
+                }
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
             }
             .day2-time{
               .ttable{
@@ -648,9 +675,6 @@ html{
                 font-weight: lighter;
                 text-align: center;
                 margin-top: -74px;
-                img{
-                  margin-bottom: 4px;
-                }
                 @media screen and (max-width: 768px) {
                   display: none;
                 }
@@ -675,9 +699,6 @@ html{
                 font-weight: lighter;
                 text-align: center;
                 margin-top: -35px;
-                img{
-                  margin-bottom: 4px;
-                }
                 @media screen and (max-width: 768px) {
                   display: none;
                 }
@@ -701,9 +722,6 @@ html{
                 font-size: 12px;
                 font-weight: lighter;
                 text-align: center;
-                img{
-                  margin-bottom: 4px;
-                }
                 @media screen and (max-width: 768px) {
                   display: none;
                 }
@@ -721,20 +739,6 @@ html{
                   width: initial;
                 }
               }
-              .speaker{
-                width: 40%;
-                float: left;
-                font-size: 12px;
-                font-weight: lighter;
-                text-align: center;
-                margin-top: -86px;
-                img{
-                  margin-bottom: 4px;
-                }
-                @media screen and (max-width: 768px) {
-                  display: none;
-                }
-              }
             }
             .day6-time{
               .ttable{
@@ -746,19 +750,6 @@ html{
                 @media screen and (max-width: 768px) {
                   float: none;
                   width: initial;
-                }
-              }
-              .speaker{
-                width: 40%;
-                float: left;
-                font-size: 12px;
-                font-weight: lighter;
-                text-align: center;
-                img{
-                  margin-bottom: 4px;
-                }
-                @media screen and (max-width: 768px) {
-                  display: none;
                 }
               }
             }
@@ -893,7 +884,7 @@ html{
                 font-size: 40px;
               }
             }
-            button{
+            button, a{
               position: relative;
               background: none;
               border: none;
@@ -906,11 +897,17 @@ html{
               }
             }
             .step-title{
+              -webkit-writing-mode: vertical-lr;
+              -moz-writing-mode: vertical-lr;
+              -o-writing-mode: vertical-lr;
               writing-mode: vertical-lr;
               margin: auto;
               letter-spacing: 4px;
               font-size: 20px;
               span{
+                -o-writing-mode: initial;
+                -moz-writing-mode: initial;
+                -webkit-writing-mode: initial;
                 writing-mode: initial;
                 @media screen and (max-width: 1050px){
                   font-size: 15px;
@@ -920,6 +917,13 @@ html{
             }
           }
           .modal{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
             .modal-dialog{
               color: black;
               margin-top: 9%;
@@ -939,6 +943,7 @@ html{
               }
             }
           }
+
           @media screen and (min-width: 768px) and (max-width: 1050px){
             float: none;
             width: 100%;
