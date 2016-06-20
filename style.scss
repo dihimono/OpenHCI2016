@@ -739,6 +739,17 @@ html{
                   width: initial;
                 }
               }
+              .speaker{
+                width: 40%;
+                float: left;
+                font-size: 12px;
+                font-weight: lighter;
+                text-align: center;
+                margin-top: -88px;
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
             }
             .day6-time{
               .ttable{

@@ -613,6 +613,16 @@ html {
                 html body #program .frame #schedule .time-container .day5-time .ttable {
                   float: none;
                   width: initial; } }
+            html body #program .frame #schedule .time-container .day5-time .speaker {
+              width: 40%;
+              float: left;
+              font-size: 12px;
+              font-weight: lighter;
+              text-align: center;
+              margin-top: -88px; }
+              @media screen and (max-width: 768px) {
+                html body #program .frame #schedule .time-container .day5-time .speaker {
+                  display: none; } }
             html body #program .frame #schedule .time-container .day6-time .ttable {
               width: 60%;
               float: left; }
