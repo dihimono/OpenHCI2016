@@ -129,8 +129,7 @@ html {
     background-color: black; }
     html body .main {
       position: relative;
-      overflow: hidden;
-      margin-top: 50px; }
+      overflow: hidden; }
       html body .main nav {
         position: fixed; }
       html body .main #animation {
