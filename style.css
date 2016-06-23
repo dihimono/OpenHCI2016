@@ -68,11 +68,15 @@
     transform: translateY(0%); } }
 @keyframes jump {
   0% {
-    transform: translateY(0%); }
+    transform: translateY(-30%); }
+  25% {
+    transform: translateY(70%); }
   50% {
-    transform: translateY(20%); }
+    transform: translateY(60%); }
+  75% {
+    transform: translateY(70%); }
   100% {
-    transform: translateY(0%); } }
+    transform: translateY(-30%); } }
 html {
   height: 100%; }
 
@@ -661,7 +665,7 @@ html {
           left: 50%;
           margin-top: -278px;
           margin-left: -633px;
-          animation: jump 0.8s infinite; }
+          animation: jump 1.6s infinite; }
           @media screen and (max-width: 768px) {
             html body .main #registration .spring {
               display: none; } }
@@ -688,29 +692,13 @@ html {
               margin: auto;
               border-radius: 50%;
               margin-top: 50px;
-              background: white;
-              /* Old browsers */
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-pink', endColorstr='$theme-green',GradientType=1 );
               text-align: center;
-              padding-top: 25px;
-              animation-name: floating;
-              animation-duration: 1.5s;
-              animation-iteration-count: infinite; }
+              padding-top: 22%;
+              background-color: gray; }
               html body .main #registration .frame .title .button span {
-                background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-                /* FF3.6-15 */
-                background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
-                /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
-                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                width: 80px;
-                display: block;
-                margin: auto;
-                font-size: 30px;
-                line-height: 1.2em;
-                font-weight: 500; }
+                padding-left: 4%;
+                font-size: 13px;
+                line-height: 1.4em; }
               @media screen and (max-width: 1050px) {
                 html body .main #registration .frame .title .button {
                   margin-top: 25px;
