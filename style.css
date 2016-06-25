@@ -692,13 +692,30 @@ html {
               margin: auto;
               border-radius: 50%;
               margin-top: 50px;
+              background: white;
+              /* Old browsers */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-pink', endColorstr='$theme-green',GradientType=1 );
               text-align: center;
-              padding-top: 22%;
-              background-color: gray; }
+              padding-top: 38px;
+              animation-name: floating;
+              animation-duration: 1.5s;
+              animation-iteration-count: infinite;
+              cursor: pointer; }
               html body .main #registration .frame .title .button span {
-                padding-left: 4%;
-                font-size: 13px;
-                line-height: 1.4em; }
+                background: -moz-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+                /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, #ec125b 0%, #00a8a0 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, #ec125b 0%, #00a8a0 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                width: 80px;
+                display: block;
+                margin: auto;
+                font-size: 20px;
+                line-height: 1.2em;
+                font-weight: 500; }
               @media screen and (max-width: 1050px) {
                 html body .main #registration .frame .title .button {
                   margin-top: 25px;
