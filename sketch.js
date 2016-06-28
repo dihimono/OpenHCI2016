@@ -111,12 +111,12 @@ function drawHorns() {
 	for(var i = 0;i < hornNum;i++) {
 		if(dist(hornCurX[i], hornCurY[i], hornStartX[i], hornStartY[i]) < 1)
 			hornState[i] = 1;
-		//if(dist(mouseX, mouseY, hornStartX[i], hornStartY[i]) < hornStartR[i]) {
-		//	if(hornState[i] != 1)hornState[i] = 1;
-		//}
-		//else {
-		//	if(hornState[i] == 1) hornState[i] = -1;
-		//}
+		// if(dist(mouseX, mouseY, hornStartX[i], hornStartY[i]) < hornStartR[i]) {
+		// 	if(hornState[i] != 1)hornState[i] = 1;
+		// }
+		// else {
+		// 	if(hornState[i] == 1) hornState[i] = -1;
+		// }
 		if(dist(hornCurX[i], hornCurY[i], hornEndX[i], hornEndY[i]) < 1)
 			hornState[i] = -1;
 		if(hornState[i] == 0) continue;
@@ -157,4 +157,8 @@ function draw() {
 	drawDots();
 	//drawLines();
 	drawHorns();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
