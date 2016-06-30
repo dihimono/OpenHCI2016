@@ -980,7 +980,7 @@ html {
             margin-left: 37px; }
           html body .main #sponsor .frame .sponsor :nth-child(2) {
             margin-left: 13px; }
-          html body .main #sponsor .frame .sponsor :nth-child(n+8) {
+          html body .main #sponsor .frame .sponsor :nth-child(n+9) {
             margin-top: 30px; }
           @media screen and (max-width: 768px) {
             html body .main #sponsor .frame .sponsor img {
