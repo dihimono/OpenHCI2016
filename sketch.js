@@ -129,7 +129,6 @@ function drawHorns() {
 			fill(tc.x, tc.y, tc.z);
 			ellipse(tx, ty, tr, tr);
 			if(abs(tx - hornCurX[i]) < 1 || abs(ty - hornCurY[i]) < 1) {
-				console.log(tr);
 				break;
 			}
 			tx += v.x, ty += v.y; 
