@@ -951,19 +951,19 @@ html {
             position: absolute;
             top: 50%;
             left: 50%;
-            margin-left: -633px;
+            margin-left: -651px;
             margin-top: -77px; }
             @media screen and (max-width: 768px) {
               html body .main #sponsor .frame .left-bg {
                 display: none; } }
-          html body .main #sponsor .frame .organizer .title {
+          html body .main #sponsor .frame .organizer .title, html body .main #sponsor .frame .co-organizer .title {
             color: white;
             font-family: 'Work Sans';
             font-weight: lighter;
             font-size: 14px;
             margin-top: 55px;
             margin-left: 10px; }
-          html body .main #sponsor .frame .organizer img {
+          html body .main #sponsor .frame .organizer img, html body .main #sponsor .frame .co-organizer img {
             display: inline-block;
             margin-top: 10px;
             margin-left: 13px; }
@@ -1002,8 +1002,7 @@ html {
           top: 650vh;
           left: 50%;
           margin-left: -622px;
-          margin-top: -40px;
-          margin-top: 30px;
+          margin-top: 190px;
           z-index: -1; }
           @media screen and (max-width: 768px) {
             html body .main #contact .contact-bg {
