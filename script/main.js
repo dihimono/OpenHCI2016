@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 $(function(){
   // 預設顯示第一個 Tab
-  var _showTab = 1;
+  var _showTab = 2;
   var $defaultLi = $('ul.days li').eq(_showTab).addClass('active');
   $($defaultLi.find('a').attr('href')).siblings().hide();
  
