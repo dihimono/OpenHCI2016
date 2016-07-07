@@ -632,6 +632,8 @@ html {
               html body .main #program .frame #schedule .time-container .day6-time .ttable {
                 width: 60%;
                 float: left; }
+                html body .main #program .frame #schedule .time-container .day6-time .ttable .theme {
+                  padding-left: 107px; }
                 @media screen and (max-width: 768px) {
                   html body .main #program .frame #schedule .time-container .day6-time .ttable {
                     float: none;
