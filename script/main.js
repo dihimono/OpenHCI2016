@@ -57,3 +57,7 @@ $(document).ready(function(){
       }, 900, 'swing');
     });
 });
+
+$(function(){
+  $.stellar();
+});

@@ -72,11 +72,31 @@
   25% {
     transform: translateY(70%); }
   50% {
-    transform: translateY(60%); }
+    transform: translateY(20%); }
   75% {
     transform: translateY(70%); }
   100% {
     transform: translateY(-30%); } }
+@keyframes dots {
+  0% {
+    transform: translateY(0%);
+    opacity: 1; }
+  80% {
+    transform: translateY(-80%);
+    opacity: 1; }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0; } }
+@keyframes dots2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0; }
+  90% {
+    transform: translateY(10%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
 html {
   height: 100%; }
 
@@ -321,7 +341,7 @@ html {
           position: absolute;
           top: 250vh;
           left: 50%;
-          margin-top: -640px;
+          margin-top: 640px;
           margin-left: -710px; }
           @media screen and (max-width: 768px) {
             html body .main #introngoals .snake {
@@ -370,9 +390,9 @@ html {
         height: 100vh; }
         html body .main #program .program-bg {
           position: absolute;
-          top: 350vh;
+          top: 450vh;
           left: 50%;
-          margin-top: -352px;
+          margin-top: 50px;
           margin-left: -736px; }
           @media screen and (max-width: 768px) {
             html body .main #program .program-bg {
@@ -1000,16 +1020,31 @@ html {
           html body .main #sponsor {
             height: initial; } }
       html body .main #contact {
-        height: 100vh; }
+        height: 100vh;
+        overflow: hidden; }
         html body .main #contact .contact-bg {
           position: absolute;
           top: 650vh;
           left: 50%;
           margin-left: -622px;
           margin-top: 190px;
-          z-index: -1; }
+          z-index: -1;
+          animation: dots 3s infinite;
+          animation-timing-function: linear; }
           @media screen and (max-width: 768px) {
             html body .main #contact .contact-bg {
+              display: none; } }
+        html body .main #contact .contact-bg2 {
+          position: absolute;
+          top: 650vh;
+          left: 50%;
+          margin-left: -622px;
+          margin-top: 190px;
+          z-index: -1;
+          animation: dots2 3s infinite;
+          animation-timing-function: linear; }
+          @media screen and (max-width: 768px) {
+            html body .main #contact .contact-bg2 {
               display: none; } }
         html body .main #contact .frame {
           position: relative;
